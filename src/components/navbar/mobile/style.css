@@ -3,7 +3,8 @@
     --MenuBarbgColor: whiteSmoke;
     --logoWidth: 40px;
     --hamburgerIconFontSize: 33px;
-    --hamburgerIconColor:#418995;
+    --hamburgerIconColor: #418995;
+    --padding: 7px 0;
 }
 
 .SUIMobileNavbarDrawer {
@@ -14,7 +15,7 @@
     --menuItemFontWeight: 500;
     --menuItemHoverColor: #418995;
     --menuItemActiveColor: #418995;
-    --menuItemSelectedBgColor: #e6e6e6;
+    --menuItemSelectedBgColor: #ededed;
 
     --subMenuTitleFontSize: 17px;
     --subMenuTitleFontWeight: 500;
@@ -30,7 +31,7 @@
     display: flex;
     justify-content: center;
     background-color: var(--MenuBarbgColor);
-    padding: 7px 0;
+    padding: var(--padding);
     border-bottom: 1px solid #ebebeb;
 }
 

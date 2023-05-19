@@ -13,13 +13,18 @@ function App() {
   return (
     <div>
 
-      <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" />
+      <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" bgColor="#f9f9f9" />
 
-      <SUIButton>Submit</SUIButton>
+      <br></br>
       <SUIRippleButton>Submit</SUIRippleButton>
-      <SUILoadingButton time={1000} className="loadingbtn">Submit</SUILoadingButton>
-      <SUILoadingButton time={1000} className="loadingbtn1">Submit</SUILoadingButton>
+      <br></br>
+      <SUILoadingButton time={1000} className="loginbtn">Login</SUILoadingButton>
+      <br></br>
+      <SUILoadingButton time={1000} className="signinbtn">Sign in</SUILoadingButton>
+      <br></br>
       <SUIDownloadLoadingButton time={1000} >download</SUIDownloadLoadingButton>
+      <br></br>
+      <SUIButton>Submit</SUIButton>
 
       {/* <SUISpinner /> */}
 

@@ -13,6 +13,7 @@
     --menuItemFontWeight: 500;
     --menuItemColor: #54a2af;
     --menuItemHoverColor: #418995;
+    --menuItemBorderColor: #418995;
 }
 
 .SUIDeskNavbarSubMenuLink {
@@ -49,6 +50,12 @@
     background-color: var(--navbarBgColor);
 }
 
+.SUIDeskNavbarContainerBox.ant-menu-horizontal {
+    line-height: 0px !important;
+    height: 35px;
+    margin-top: 33px !important;
+}
+
 /* logo */
 .SUIDeskNavbar .SUIDeskLogo img {
     width: var(--logoWidth);
@@ -72,7 +79,7 @@
     align-items: center;
 }
 
-/* non-sub-menu link */
+/* menu link */
 .SUIDeskNavbarContainerBox {
     width: 100%;
     color: var(--menuItemColor) !important;
@@ -97,12 +104,12 @@
 }
 
 .SUIDeskNavbar .ant-menu-item-selected::after {
-    border-bottom: 2px solid var(--menuItemHoverColor) !important;
+    border-bottom: 2px solid var(--menuItemBorderColor) !important;
 }
 
 
 .SUIDeskNavbar .ant-menu-item:hover::after {
-    border-bottom: 2px solid var(--menuItemHoverColor) !important;
+    border-bottom: 2px solid var(--menuItemBorderColor) !important;
 }
 
 .SUIDeskNavbar .ant-menu-item-selected,
@@ -125,15 +132,15 @@
 }
 
 .SUIDeskNavbar .ant-menu-submenu:hover::after {
-    border-bottom: 2px solid var(--menuItemHoverColor) !important;
+    border-bottom: 2px solid var(--menuItemBorderColor) !important;
 }
 
 .SUIDeskNavbar .ant-menu-submenu-open::after {
-    border-bottom: 2px solid var(--menuItemHoverColor) !important;
+    border-bottom: 2px solid var(--menuItemBorderColor) !important;
 }
 
 .SUIDeskNavbar .ant-menu-submenu-selected::after {
-    border-bottom: 2px solid var(--menuItemHoverColor) !important;
+    border-bottom: 2px solid var(--menuItemBorderColor) !important;
 }
 
 .SUIDeskNavbar .ant-menu-submenu-selected>.ant-menu-submenu-title {
@@ -154,6 +161,10 @@
     border-radius: 5px;
     padding: 3px;
 }
+.SUIDeskNavbarSubMenuContainer {
+    margin-top: -11px !important;
+}
+
 
 .SUIDeskNavbarSubMenuLink .ant-menu-item {
     margin-right: 15px !important;
@@ -177,18 +188,22 @@
 .SUIDeskNavbarDownArrowIcon {
     font-size: 19px !important;
     position: relative;
-    top: 2px;
+    top: 3.5px;
+    scale: 1.2;
 }
 
+
 /* last menu item border design */
-.SUIDeskNavbarLastMenuItem {
+.SUIDeskNavbarLastMenuItem span {
     background-color: var(--lastMenuItemBgColor) !important;
     color: var(--lastMenuItemColor);
     border-radius: 7px !important;
-    padding: 0 12px !important;
+    padding: 5px 12px 10px 12px !important;
 }
-.SUIDeskNavbarContainerBox.ant-menu-horizontal {
-    line-height: 40px !important;
+
+.SUIDeskNavbarLastMenuItem span:hover {
+    background-color: var(--lastMenuItemBgColor) !important;
+    opacity: 0.94 !important;
 }
 
 .SUIDeskNavbarLastMenuItem.ant-menu-item:hover {
@@ -200,11 +215,11 @@
 }
 
 .SUIDeskNavbarLastMenuItem.ant-menu-item:hover::after {
-    border-bottom: 2px solid var(--lastMenuItemBgColor) !important;
+    border-bottom: none !important;
 }
 
 .SUIDeskNavbarLastMenuItem.ant-menu-item-selected:after {
-    border-bottom: 2px solid var(--lastMenuItemBgColor) !important;
+    border-bottom: none !important;
 }
 
 /* media quries */
@@ -216,4 +231,3 @@
     }
 
 }
-

@@ -1,10 +1,10 @@
-import { CaretDownOutlined } from '@ant-design/icons';
+import { IoIosArrowDown } from 'react-icons/io';
 import { Menu } from 'antd';
 import { useState } from 'react';
 
 import './style.css'
 
-export const SUIDeskNavbar = ({menuItemColor, menuItemHoverColor}) => {
+export const SUIDeskNavbar = ({ className, menuItemColor, menuItemHoverColor,DesktopBgColor }) => {
     const [current, setCurrent] = useState('home');
     const onClick = (e) => {
         console.log('click ', e);
@@ -14,7 +14,8 @@ export const SUIDeskNavbar = ({menuItemColor, menuItemHoverColor}) => {
     const SUIStyles = `
     .SUIDeskNavbar {
         --menuItemColor: ${menuItemColor};     
-        --menuItemHoverColor:${menuItemHoverColor} ;                                                                                                                                                                                                                                                           
+        --menuItemHoverColor:${menuItemHoverColor} ; 
+        --navbarBgColor: ${DesktopBgColor};                                                                                                                                                                                                                                                     
     }
     .SUIDeskNavbarSubMenuLink{
         --subMenuItemColor: ${menuItemColor};
@@ -27,7 +28,7 @@ export const SUIDeskNavbar = ({menuItemColor, menuItemHoverColor}) => {
 
 
     return (
-        <div>
+        <div className={className}>
             <style>
                 {SUIStyles}
             </style>
@@ -44,7 +45,7 @@ export const SUIDeskNavbar = ({menuItemColor, menuItemHoverColor}) => {
                         <Menu.Item key="About" >
                             About
                         </Menu.Item>
-                        <Menu.SubMenu key="Advantage" title={<span>Advantage <CaretDownOutlined className='SUIDeskNavbarDownArrowIcon' /></span>}>
+                        <Menu.SubMenu className='SUIDeskNavbarSubMenuContainer' key="Advantage" title={<span>Advantage <IoIosArrowDown className='SUIDeskNavbarDownArrowIcon' /></span>}>
                             <Menu.ItemGroup className='SUIDeskNavbarSubMenuLink'>
                                 <Menu.Item key="setting:1">Option 1</Menu.Item>
                                 <Menu.Item key="setting:2">Option 2</Menu.Item>
