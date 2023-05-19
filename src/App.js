@@ -12,16 +12,15 @@ import SUISpinner from './widgets/spinner';
 function App() {
   return (
     <div>
+      <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" />
 
-      {/* button */}
-      {/* <SUIButton>Submit</SUIButton>
+      <SUIButton>Submit</SUIButton>
       <SUIRippleButton>Submit</SUIRippleButton>
       <SUILoadingButton time={1000} className="loadingbtn">Submit</SUILoadingButton>
       <SUILoadingButton time={1000} className="loadingbtn1">Submit</SUILoadingButton>
-      <SUIDownloadLoadingButton time={1000} >download</SUIDownloadLoadingButton> */}
+      <SUIDownloadLoadingButton time={1000} >download</SUIDownloadLoadingButton>
 
-      {/* navbar */}
-      <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995"/>
+      \
       {/* <SUISpinner /> */}
     </div>
   );
