@@ -12,6 +12,7 @@ import SUISpinner from './widgets/spinner';
 function App() {
   return (
     <div>
+
       <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" />
 
       <SUIButton>Submit</SUIButton>
@@ -20,8 +21,8 @@ function App() {
       <SUILoadingButton time={1000} className="loadingbtn1">Submit</SUILoadingButton>
       <SUIDownloadLoadingButton time={1000} >download</SUIDownloadLoadingButton>
 
-      \
       {/* <SUISpinner /> */}
+
     </div>
   );
 }
