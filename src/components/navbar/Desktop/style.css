@@ -1,0 +1,219 @@
+/* variables */
+.SUIDeskNavbar {
+    --navbarWidth: 95%;
+    --navbarHeight: 80px;
+    --navbarBgColor: #f2f2f2;
+
+    --logoWidth: 50px;
+    --logoFontSize: 32px;
+    --logoFontWeight: 500;
+    --logoColor: #397fe0;
+
+    --menuItemFontSize: 21px;
+    --menuItemFontWeight: 500;
+    --menuItemColor: #54a2af;
+    --menuItemHoverColor: #418995;
+}
+
+.SUIDeskNavbarSubMenuLink {
+    --subMenuItemFontSize: 18px;
+    --subMenuItemFontWeight: 500;
+    --subMenuItemColor: #54a2af;
+    --subMenuItemHoverColor: #418995;
+
+    --subMenuDropdownBgColor: white;
+    --SubMenuDropdownItemActiveBgColor: #f2f2f2;
+}
+
+.SUIDeskNavbarLastMenuItem {
+    --lastMenuItemBgColor: #418995;
+    --lastMenuItemColor: white;
+    --lastMenuItemHoverColor: whiteSmoke;
+}
+
+/* styles */
+/* Entire container */
+.SUIDeskNavbarContainer {
+    width: var(--navbarWidth);
+    height: var(--navbarHeight);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.SUIDeskNavbar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: var(--navbarHeight);
+    background-color: var(--navbarBgColor);
+}
+
+/* logo */
+.SUIDeskNavbar .SUIDeskLogo img {
+    width: var(--logoWidth);
+}
+
+.SUIDeskNavbar .SUIDeskLogo {
+    display: flex;
+    align-items: center;
+}
+
+.SUIDeskNavbar .SUIDeskLogo p {
+    font-size: var(--logoFontSize);
+    font-weight: var(--logoFontWeight);
+    margin: 0;
+    padding: 0 !important;
+    margin-top: -8px;
+}
+
+.SUIDeskNavbar .SUIDeskLogo {
+    display: flex;
+    align-items: center;
+}
+
+/* non-sub-menu link */
+.SUIDeskNavbarContainerBox {
+    width: 100%;
+    color: var(--menuItemColor) !important;
+}
+
+.SUIDeskNavbar .ant-menu-light>.ant-menu {
+    color: var(--menuItemColor) !important;
+}
+
+.SUIDeskNavbar .ant-menu-horizontal {
+    border: none;
+}
+
+.SUIDeskNavbar .ant-menu-overflow {
+    justify-content: flex-end;
+    background-color: transparent;
+}
+
+.SUIDeskNavbar span.ant-menu-title-content {
+    font-size: var(--menuItemFontSize);
+    font-weight: var(--menuItemFontWeight);
+}
+
+.SUIDeskNavbar .ant-menu-item-selected::after {
+    border-bottom: 2px solid var(--menuItemHoverColor) !important;
+}
+
+
+.SUIDeskNavbar .ant-menu-item:hover::after {
+    border-bottom: 2px solid var(--menuItemHoverColor) !important;
+}
+
+.SUIDeskNavbar .ant-menu-item-selected,
+.SUIDeskNavbar .ant-menu-item:hover {
+    color: #418995 !important;
+}
+
+/* sub-menu links */
+.icon {
+    font-size: 19px !important;
+    margin-left: 2px;
+}
+
+.advantage-menu-hovered .icon {
+    transition: transform 12s ease-in-out;
+}
+
+.SUIDeskNavbar .ant-menu-submenu-title:hover {
+    color: var(--menuItemHoverColor) !important;
+}
+
+.SUIDeskNavbar .ant-menu-submenu:hover::after {
+    border-bottom: 2px solid var(--menuItemHoverColor) !important;
+}
+
+.SUIDeskNavbar .ant-menu-submenu-open::after {
+    border-bottom: 2px solid var(--menuItemHoverColor) !important;
+}
+
+.SUIDeskNavbar .ant-menu-submenu-selected::after {
+    border-bottom: 2px solid var(--menuItemHoverColor) !important;
+}
+
+.SUIDeskNavbar .ant-menu-submenu-selected>.ant-menu-submenu-title {
+    color: var(--menuItemHoverColor) !important;
+}
+
+.SUIDeskNavbar .ant-menu-light>.ant-menu {
+    color: var(--menuItemColor);
+}
+
+.SUIDeskNavbarSubMenuLink {
+    color: var(--subMenuItemColor) !important;
+    font-weight: var(--subMenuItemFontWeight) !important;
+    font-size: var(--subMenuItemFontSize) !important;
+    position: absolute;
+    top: 14px;
+    background-color: var(--subMenuDropdownBgColor);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+.SUIDeskNavbarSubMenuLink .ant-menu-item {
+    margin-right: 15px !important;
+}
+
+.SUIDeskNavbarSubMenuLink .ant-menu-item:hover {
+    color: var(--subMenuItemHoverColor) !important;
+    background-color: var(--SubMenuDropdownItemActiveBgColor) !important;
+}
+
+.SUIDeskNavbarSubMenuLink .ant-menu-item-group-title {
+    padding: 0;
+
+}
+
+.SUIDeskNavbarSubMenuLink .ant-menu-item-selected {
+    background-color: var(--SubMenuDropdownItemActiveBgColor) !important;
+    color: var(--subMenuItemHoverColor) !important;
+}
+
+.SUIDeskNavbarDownArrowIcon {
+    font-size: 19px !important;
+    position: relative;
+    top: 2px;
+}
+
+/* last menu item border design */
+.SUIDeskNavbarLastMenuItem {
+    background-color: var(--lastMenuItemBgColor) !important;
+    color: var(--lastMenuItemColor);
+    border-radius: 7px !important;
+    padding: 0 12px !important;
+}
+.SUIDeskNavbarContainerBox.ant-menu-horizontal {
+    line-height: 40px !important;
+}
+
+.SUIDeskNavbarLastMenuItem.ant-menu-item:hover {
+    color: var(--lastMenuItemHoverColor) !important;
+}
+
+.SUIDeskNavbarLastMenuItem.ant-menu-item-selected {
+    color: var(--lastMenuItemHoverColor) !important;
+}
+
+.SUIDeskNavbarLastMenuItem.ant-menu-item:hover::after {
+    border-bottom: 2px solid var(--lastMenuItemBgColor) !important;
+}
+
+.SUIDeskNavbarLastMenuItem.ant-menu-item-selected:after {
+    border-bottom: 2px solid var(--lastMenuItemBgColor) !important;
+}
+
+/* media quries */
+
+
+@media (max-width:1023.5px) {
+    .SUIDeskNavbar {
+        display: none;
+    }
+
+}
+

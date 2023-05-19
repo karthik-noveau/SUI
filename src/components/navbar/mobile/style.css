@@ -1,0 +1,154 @@
+/* variables */
+.SUIMobileNavbar {
+    --MenuBarbgColor: whiteSmoke;
+    --logoWidth: 40px;
+    --hamburgerIconFontSize: 33px;
+    --hamburgerIconColor:#418995;
+}
+
+.SUIMobileNavbarDrawer {
+    --DrawerbgColor: whiteSmoke;
+
+    --menuItemColor: #54a2af;
+    --menuItemFontSize: 16px;
+    --menuItemFontWeight: 500;
+    --menuItemHoverColor: #418995;
+    --menuItemActiveColor: #418995;
+    --menuItemSelectedBgColor: #e6e6e6;
+
+    --subMenuTitleFontSize: 17px;
+    --subMenuTitleFontWeight: 500;
+
+    --subMenuItemFontSize: 15px;
+
+}
+
+
+/* mobile navigation container bar */
+.SUIMobileNavbarContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--MenuBarbgColor);
+    padding: 7px 0;
+    border-bottom: 1px solid #ebebeb;
+}
+
+.SUIMobileNavbarContainerBox {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+.SUIMobileNavbarLogo img {
+    width: var(--logoWidth);
+}
+
+/* hamburger menu button */
+.SUIMobileNavbarHamburgerButton .HamburgerIcon svg {
+    font-size: var(--hamburgerIconFontSize);
+    color: var(--hamburgerIconColor);
+    transform: scaleY(-1);
+}
+
+/* collapse */
+.SUIMobileNavbar .ant-collapse .ant-collapse-content>.ant-collapse-content-box {
+    padding: 0 !important;
+}
+
+.SUIMobileNavbar .ant-collapse>.ant-collapse-item>.ant-collapse-header {
+    padding: 0 !important;
+}
+
+/* drawer */
+.SUIMobileNavbarDrawer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--DrawerbgColor);
+    box-shadow: none !important;
+    padding: 7px 0 13px 0;
+}
+
+.SUIMobileNavbarDrawerContainer {
+    width: 94%;
+    display: flex;
+    justify-content: flex-start;
+    background-color: transparent;
+}
+
+.SUIMobileNavbarDrawerContainerBox {
+    border-inline-end: none !important;
+    width: 100% !important;
+    background-color: transparent;
+}
+
+/* menu items*/
+.SUIMobileNavbarDrawer .ant-menu-item {
+    font-weight: var(--menuItemFontWeight);
+    font-size: var(--menuItemFontSize) !important;
+    padding: 0 10px !important;
+    width: calc(100% - 20px) !important;
+    color: var(--menuItemColor) !important;
+}
+
+.SUIMobileNavbarDrawer .ant-menu-item-selected {
+    background-color: var(--menuItemSelectedBgColor) !important;
+    color: var(--menuItemActiveColor) !important;
+}
+
+.SUIMobileNavbarDrawer .ant-menu-item:hover {
+    color: var(--menuItemHoverColor) !important;
+}
+
+/* submenu items*/
+.SUIMobileNavbarDrawer .ant-menu-submenu-title {
+    font-size: var(--subMenuTitleFontSize) !important;
+    font-weight: var(--subMenuTitleFontWeight);
+    color: var(--menuItemColor) !important;
+    padding-left: 10px !important;
+}
+
+.SUIMobileNavbarDrawer .custom-submenu .ant-menu-item {
+    font-size: var(--subMenuItemFontSize) !important;
+}
+
+.SUIMobileNavbarDrawer .ant-menu-sub.ant-menu-inline {
+    background: white !important;
+    margin-left: 6px;
+    margin-right: 18px;
+    border-radius: 6px !important;
+    padding: 7px 0px 7px 7px !important;
+    margin-bottom: 12px !important;
+}
+
+.SUIMobileNavbarDrawer .ant-menu-sub.ant-menu-inline li {
+    padding-left: 18px !important;
+}
+
+.SUIMobileNavbarDrawer .ant-menu-submenu-title:hover {
+    background-color: transparent !important;
+    color: var(--menuItemHoverColor) !important;
+}
+
+.SUIMobileNavbarDrawer .ant-menu-submenu-selected.ant-menu-submenu-title {
+    color: var(--menuItemActiveColor) !important;
+}
+
+.SUIMobileNavbarDrawer .ant-menu-submenu-title:hover {
+    color: var(--menuItemColor) !important;
+}
+
+.SUIMobileNavbarDrawer .ant-submenu-title:hover {
+    color: var(--menuItemColor) !important;
+}
+
+
+/* Media Quries */
+@media (min-width:1024px) {
+    .SUIMobileNavbar {
+        display: none;
+    }
+}

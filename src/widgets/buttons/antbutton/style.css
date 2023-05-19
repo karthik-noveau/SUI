@@ -1,0 +1,32 @@
+/* variables */
+.SUIButton{
+  --bg-color:#1677ff;
+  --font-color:white;
+  --border-radius:4px;
+  --height:32px;
+  --width:123px;
+}
+
+  /* styles */
+.SUIButton{
+  height: var(--height);
+  width: var(--width);
+}
+.SUIButton.ant-btn {
+  background-color: var(--bg-color);
+  box-shadow: none;
+  border-radius: var(--border-radius) !important;
+}
+.SUIButton.ant-btn-primary:hover {
+  background-color: var(--bg-color) !important;
+}
+.SUIButton.ant-btn-primary:active {
+  background-color: var(--bg-color) !important;
+  opacity: 0.85;
+  box-shadow: none;
+}
+
+/* outer glow */
+.SUIButton .ant-wave {
+  display: none;
+}
