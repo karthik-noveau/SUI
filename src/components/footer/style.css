@@ -1,0 +1,19 @@
+.SUIFooter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.SUIFooterContainer {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.SUIFooterLogoContainer img {
+    width: 80px;
+}
+
+.SUIFooterDescriptionContainer p {}
+
+.SUIFooterSocialmediaContainer {}

@@ -6,6 +6,7 @@ import { SUINavbar } from './components/navbar';
 
 import './app.css'
 import SUISpinner from './widgets/spinner';
+import SUIFooter from './components/footer';
 
 
 
@@ -13,7 +14,7 @@ function App() {
   return (
     <div>
 
-      <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" bgColor="#f9f9f9" />
+      <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" bgColor="white" />
 
       <br></br>
       <SUIRippleButton>Submit</SUIRippleButton>
@@ -27,6 +28,8 @@ function App() {
       <SUIButton>Submit</SUIButton>
 
       {/* <SUISpinner /> */}
+
+      <SUIFooter/>
 
     </div>
   );

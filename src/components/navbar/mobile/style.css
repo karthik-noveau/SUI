@@ -15,12 +15,14 @@
     --menuItemFontWeight: 500;
     --menuItemHoverColor: #418995;
     --menuItemActiveColor: #418995;
-    --menuItemSelectedBgColor: #ededed;
+    --menuItemSelectedBgColor: #edededad;
 
     --subMenuTitleFontSize: 17px;
     --subMenuTitleFontWeight: 500;
 
     --subMenuItemFontSize: 15px;
+    --subMenuDropdownBgColor: transparent;
+    --subMenuDropdownBorderColor: #ebebeb;
 
 }
 
@@ -32,7 +34,7 @@
     justify-content: center;
     background-color: var(--MenuBarbgColor);
     padding: var(--padding);
-    border-bottom: 1px solid #ebebeb;
+    box-shadow: 0 0 3px 0px #dbdbdb;
 }
 
 .SUIMobileNavbarContainerBox {
@@ -69,6 +71,7 @@
     display: flex;
     justify-content: center;
     background-color: var(--DrawerbgColor);
+    border-top: 1.5px solid #f1f1f1e0;
     box-shadow: none !important;
     padding: 7px 0 13px 0;
 }
@@ -112,17 +115,23 @@
     padding-left: 10px !important;
 }
 
+.SUIMobileNavbarDrawer .ant-menu-submenu-title i {
+    scale: 1.4;
+}
+
 .SUIMobileNavbarDrawer .custom-submenu .ant-menu-item {
     font-size: var(--subMenuItemFontSize) !important;
 }
 
 .SUIMobileNavbarDrawer .ant-menu-sub.ant-menu-inline {
-    background: white !important;
-    margin-left: 6px;
-    margin-right: 18px;
-    border-radius: 6px !important;
-    padding: 7px 0px 7px 7px !important;
+    background-color: var(--subMenuDropdownBgColor) !important;
+    border-radius: 0px !important;
     margin-bottom: 12px !important;
+    margin-left: 16px;
+    margin-right: 0px;
+    padding: 7px 0 7px 8px !important;
+    border-left: 2px solid var(--subMenuDropdownBorderColor);
+    border-radius: 0;
 }
 
 .SUIMobileNavbarDrawer .ant-menu-sub.ant-menu-inline li {
