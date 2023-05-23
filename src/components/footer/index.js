@@ -1,5 +1,5 @@
 import React from 'react'
-import { AiFillInstagram } from 'react-icons/ai'
+import { AiFillInstagram, AiOutlineCopyrightCircle } from 'react-icons/ai'
 import { FaTwitter } from 'react-icons/fa'
 import { TfiLinkedin } from 'react-icons/tfi'
 import { BsFacebook } from 'react-icons/bs'
@@ -11,14 +11,14 @@ const SUIFooter = () => {
         <div>
             <div className="SUIFooter">
                 <div className="SUIFooterContainer">
-                <div className="SUIFooterNewsLetterContainer">
+                    <div className="SUIFooterNewsLetterContainer">
                         <p>Subscribe our news letter</p>
                         <div className="SUIFooterNewsLetterInputContainer">
                             <input />
                             <button>Submit</button>
                         </div>
                     </div>
-                    <div className="SUIFooterBottomContainer"> 
+                    <div className="SUIFooterBottomContainer">
                         <div className="SUIFooterLogoContainer">
                             <img src="https://firebasestorage.googleapis.com/v0/b/skynoveau-office.appspot.com/o/logo.png?alt=media&token=e375539c-5dff-44c8-98b2-50b8adc60488" />
                             <div className="SUIFooterDescriptionContainer">
@@ -68,7 +68,7 @@ const SUIFooter = () => {
                                 </div>
                                 <div className="SUIFooterLinkContainerBoxItem">
                                     <ul>
-                                        <li>OUR ADDRESS</li>
+                                        <li>OUR ADDRESS</li> 
                                         <li>WoodHeadCreative</li>
                                         <li>D125/E, Santhosh Colony, K.K</li>
                                         <li>Nagar,Chennai - 600078</li>
@@ -76,6 +76,11 @@ const SUIFooter = () => {
                                 </div>
 
                             </div>
+                        </div>
+                    </div>
+                    <div className='SUIFooterCopyWriteContainer'>
+                        <div className='SUIFooterCopyWriteContainerBox'>
+                            <p><AiOutlineCopyrightCircle className='copyrightIcon'/> All rights are reserved by Skynoveau Technology 2023</p>
                         </div>
                     </div>
                 </div>
