@@ -1,5 +1,5 @@
 import { Menu, Button, Collapse } from 'antd';
-import { HiMenuAlt3 } from 'react-icons/hi';
+import { AiOutlineMenu } from 'react-icons/ai';
 import { useState } from 'react';
 import { Sling as Hamburger } from 'hamburger-react'
 
@@ -38,7 +38,7 @@ export const SUIMobileNavbar = ({ className, menuItemColor, menuItemHoverColor, 
                             <img src="https://firebasestorage.googleapis.com/v0/b/skynoveau-office.appspot.com/o/logo.png?alt=media&token=e375539c-5dff-44c8-98b2-50b8adc60488" />
                         </div>
                         <div className='SUIMobileNavbarHamburgerButton'>
-                            <HiMenuAlt3 onClick={toggleCollapse} className='HamburgerIcon' />
+                            <AiOutlineMenu onClick={toggleCollapse} className='HamburgerIcon' />
                         </div>
                     </div>
                 </div>

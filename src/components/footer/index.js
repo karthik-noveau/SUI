@@ -15,7 +15,7 @@ const SUIFooter = () => {
                     <div className="SUIFooterNewsLetterContainer">
                         <p>Subscribe our news letter</p>
                         <div className="SUIFooterNewsLetterInputContainer">
-                            <input type='email' placeholder='Enter the Mail Id'/>
+                            <input type='email' placeholder='Enter the Mail Id' />
                             <SUIButton className="newsLetterButton">Submit</SUIButton>
                         </div>
                     </div>

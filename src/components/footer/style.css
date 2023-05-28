@@ -1,4 +1,10 @@
 /* variables */
+.SUIFooter {
+    --bg-color: #35637a;
+    --font-color: white;
+    --font-opacity: 0.7;
+}
+
 .SUIFooterNewsLetterInputContainer .newsLetterButton .SUIButton {
     --bg-color: #153748;
     --font-color: white;
@@ -12,7 +18,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: #35637a;
+    background-color: var(--bg-color);
     padding: 40px 0;
     margin-top: 601px;
 }
@@ -41,7 +47,7 @@
 
 .SUIFooterNewsLetterContainer p {
     font-size: 20px;
-    color: white;
+    color: var(--font-color);
 }
 
 .SUIFooterNewsLetterInputContainer input[type="email"] {
@@ -80,7 +86,7 @@
 }
 
 .SUIFooterSocialmediaContainer a {
-    color: #35637a;
+    color: var(--bg-color);
     font-size: 17px;
     text-align: center;
     width: 100%;
@@ -120,93 +126,9 @@
 .SUIFooterDescriptionContainer p {
     font-size: 15px;
     font-weight: 300;
-    color: white;
+    color: var(--font-color);
     line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
-}.SUIFooterDescriptionContainer p {
-    font-size: 15px;
-    font-weight: 300;
-    color: white;
-    line-height: 24px;
+    opacity: var(--font-opacity);
 }
 
 /* link container */
@@ -240,14 +162,16 @@
 
 .SUIFooterLinkContainerBoxItem ul li {
     font-size: 16px;
-    color: #ffffff8f;
+    color: var(--font-color);
+    opacity: var(--font-opacity);
     margin-top: 10px;
 }
 
 .SUIFooterLinkContainerBoxItem ul li:first-child {
     font-size: 16px;
-    color: white;
+    color: var(--font-color);
     font-weight: 500;
+    opacity: 1;
     margin-bottom: 18px;
 }
 
@@ -261,20 +185,22 @@
     display: flex;
 }
 
-.SUIFooterCopyWriteContainer p:nth-of-type(1) {
-    font-size: 16px;
-}
-.SUIFooterCopyWriteContainer p:nth-of-type(2){
-    font-size: 16px;
-    color: #ffffff8f;
-}
-
 .SUIFooterCopyWriteContainerBox {
-    color: white;
+    color: var(--font-color);
     display: flex;
     justify-content: space-between;
     width: 100%;
     flex-direction: row-reverse;
+}
+
+.SUIFooterCopyWriteContainer p:nth-of-type(1) {
+    font-size: 16px;
+}
+
+.SUIFooterCopyWriteContainer p:nth-of-type(2) {
+    font-size: 16px;
+    color: var(--font-color);
+    opacity: var(--font-opacity);
 }
 
 .SUIFooterCopyWriteContainerBox .copyrightIcon {
@@ -315,21 +241,26 @@
     .SUIFooterContainer {
         width: 90%;
     }
+
     .SUIFooterCopyWriteContainerBox {
         flex-direction: column;
     }
+
     .SUIFooterCopyWriteContainer p:nth-of-type(2) {
         font-size: 14.5px;
         margin-top: 19px;
         line-height: 24px;
     }
-    .SUIFooterCopyWriteContainer p:nth-of-type(1){
+
+    .SUIFooterCopyWriteContainer p:nth-of-type(1) {
         font-size: 15px;
     }
+
     .SUIFooterNewsLetterInputContainer input[type="email"] {
         width: 225px;
         padding: 7px 0 7px 8px;
     }
+
     .SUIFooterNewsLetterInputContainer .newsLetterButton .SUIButton {
         --bg-color: #153748;
         --font-color: white;
