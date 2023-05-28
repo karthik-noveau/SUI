@@ -50,10 +50,9 @@
 }
 
 /* hamburger menu button */
-.SUIMobileNavbarHamburgerButton .HamburgerIcon svg {
+.SUIMobileNavbarHamburgerButton .HamburgerIcon {
     font-size: var(--hamburgerIconFontSize);
     color: var(--hamburgerIconColor);
-    transform: scaleY(-1);
 }
 
 /* collapse */

@@ -5,6 +5,7 @@ import { TfiLinkedin } from 'react-icons/tfi'
 import { BsFacebook } from 'react-icons/bs'
 
 import './style.css'
+import { SUIButton } from './../../widgets/buttons/antbutton/index';
 
 const SUIFooter = () => {
     return (
@@ -14,8 +15,8 @@ const SUIFooter = () => {
                     <div className="SUIFooterNewsLetterContainer">
                         <p>Subscribe our news letter</p>
                         <div className="SUIFooterNewsLetterInputContainer">
-                            <input />
-                            <button>Submit</button>
+                            <input type='email' placeholder='Enter the Mail Id'/>
+                            <SUIButton className="newsLetterButton">Submit</SUIButton>
                         </div>
                     </div>
                     <div className="SUIFooterBottomContainer">
@@ -68,7 +69,7 @@ const SUIFooter = () => {
                                 </div>
                                 <div className="SUIFooterLinkContainerBoxItem">
                                     <ul>
-                                        <li>OUR ADDRESS</li> 
+                                        <li>OUR ADDRESS</li>
                                         <li>WoodHeadCreative</li>
                                         <li>D125/E, Santhosh Colony, K.K</li>
                                         <li>Nagar,Chennai - 600078</li>
@@ -80,7 +81,8 @@ const SUIFooter = () => {
                     </div>
                     <div className='SUIFooterCopyWriteContainer'>
                         <div className='SUIFooterCopyWriteContainerBox'>
-                            <p><AiOutlineCopyrightCircle className='copyrightIcon'/> All rights are reserved by Skynoveau Technology 2023</p>
+                            <p>All rights reserved</p>
+                            <p>copyrights <AiOutlineCopyrightCircle className='copyrightIcon' /> 2023 Skynoveau Technology Pvt.Ltd.</p>
                         </div>
                     </div>
                 </div>

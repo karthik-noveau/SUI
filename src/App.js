@@ -17,19 +17,19 @@ function App() {
       <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" bgColor="white" />
 
       <br></br>
-      <SUIRippleButton>Submit</SUIRippleButton>
+      <SUIRippleButton color="white" bgColor="red" >Submit</SUIRippleButton>
       <br></br>
-      <SUILoadingButton time={1000} className="loginbtn">Login</SUILoadingButton>
+      <SUILoadingButton time={1000} className="loginbtn" >Login</SUILoadingButton>
       <br></br>
-      <SUILoadingButton time={1000} className="signinbtn">Sign in</SUILoadingButton>
+      <SUILoadingButton time={1000} className="signinbtn"  >Sign in</SUILoadingButton>
       <br></br>
-      <SUIDownloadLoadingButton time={1000} >download</SUIDownloadLoadingButton>
+      <SUIDownloadLoadingButton time={1000} color="white" bgColor="red">download</SUIDownloadLoadingButton>
       <br></br>
-      <SUIButton>Submit</SUIButton>
+      <SUIButton color="white" bgColor="red">Submit</SUIButton>
 
       {/* <SUISpinner /> */}
 
-      <SUIFooter/>
+      <SUIFooter />
 
     </div>
   );

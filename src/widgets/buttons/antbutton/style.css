@@ -9,8 +9,8 @@
 
   /* styles */
 .SUIButton{
-  height: var(--height);
-  width: var(--width);
+  height: var(--height) !important;
+  width: var(--width) !important;
 }
 .SUIButton.ant-btn {
   background-color: var(--bg-color);
