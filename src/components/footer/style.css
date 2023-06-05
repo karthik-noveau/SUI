@@ -271,3 +271,10 @@
     }
 
 }
+
+@media (max-width:320px) {
+    .SUIFooterNewsLetterInputContainer input[type="email"] {
+        width: 190px;
+        padding: 7px 0 7px 8px;
+    }
+}

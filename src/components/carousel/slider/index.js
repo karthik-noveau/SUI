@@ -10,9 +10,10 @@ import "./style.css";
 // images
 import sliderImg from './images/sliderImg.jpg'
 import sliderImgSize from './images/sliderImgSize.jpg'
+import sliderTextImg from './images/sliderTextImg.jpg'
 
 
-const SUISlider = ({className}) => {
+const SUISlider = ({ className }) => {
     return (
         <div className={className}>
             <Swiper
@@ -27,9 +28,9 @@ const SUISlider = ({className}) => {
                     clickable: true,
                 }}
                 navigation={true}
-                modules={[Autoplay, Pagination, Navigation, EffectFade]}
+                modules={[Pagination, Navigation, EffectFade]}
                 className="SUISlider"
-                effect={"slide"}   // slide effect={"fade"}
+                effect={"fade"}   // slide effect={"fade"}
                 allowSlidePrev={true} // Disable sliding to the previous slide
                 allowSlideNext={true} // Disable sliding to the next slide
                 allowTouchMove={true} // Disable touch interaction
@@ -42,7 +43,14 @@ const SUISlider = ({className}) => {
                     <img src={sliderImgSize} />
                 </SwiperSlide>
                 <SwiperSlide className="SUISliderContaniner" >
-                    <img src={sliderImg} />
+                    <img src={sliderTextImg} />
+                    <div className="SUISliderTextContainer" >
+                        <div className="SUISliderTextContainerBox" >
+                            <p>Karthik is the web developer and moreover react js developer</p>
+                            <p>Karthik is the web developer and moreover react js developer</p>
+                            <p>Karthik is the web developer and moreover react js developer</p>
+                        </div>
+                    </div>
                 </SwiperSlide>
 
             </Swiper>
