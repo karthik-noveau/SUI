@@ -1,6 +1,6 @@
-import React, { useRef } from "react";
+import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay, Pagination, Navigation, EffectFade } from "swiper";
+import { Pagination, Navigation, EffectFade } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -8,9 +8,9 @@ import "swiper/css/navigation";
 import "swiper/css/effect-fade";
 import "./style.css";
 // images
-import sliderImg from './images/sliderImg.jpg'
-import sliderImgSize from './images/sliderImgSize.jpg'
-import sliderTextImg from './images/sliderTextImg.jpg'
+import SliderImg1 from './images/SliderImg1.jpg'
+import SliderImgSize from './images/SliderImgSize.jpg'
+import SliderImgText from './images/SliderImgText.jpg'
 
 
 const SUISlider = ({ className }) => {
@@ -37,13 +37,13 @@ const SUISlider = ({ className }) => {
             >
 
                 <SwiperSlide className="SUISliderContaniner" >
-                    <img src={sliderImg} />
+                    <img src={SliderImg1} alt="slider1" />
                 </SwiperSlide>
                 <SwiperSlide className="SUISliderContaniner" >
-                    <img src={sliderImgSize} />
+                    <img src={SliderImgSize} alt="slider2" />
                 </SwiperSlide>
                 <SwiperSlide className="SUISliderContaniner" >
-                    <img src={sliderTextImg} />
+                    <img src={SliderImgText} alt="slider3" />
                     <div className="SUISliderTextContainer" >
                         <div className="SUISliderTextContainerBox" >
                             <p>Karthik is the web developer and moreover react js developer</p>
