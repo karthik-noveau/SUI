@@ -9,6 +9,7 @@ import SUISpinner from './widgets/spinner';
 import SUIFooter from './components/footer';
 import SUISlider from './components/carousel/slider'
 import SUIDescriptionSlider from './components/carousel/description_slider';
+import SUITestimonials from './components/carousel/testimonials';
 
 
 
@@ -18,9 +19,13 @@ function App() {
 
       <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" bgColor="white" />
 
-      <SUISlider />                                                                                    
-      <br></br>                                                                                                                                                                 
-      <SUIDescriptionSlider                                  />
+      <SUISlider />
+      <br></br>
+      <SUIDescriptionSlider />
+
+      <br></br>
+
+      <SUITestimonials />
 
       <br></br>
       <SUIRippleButton color="white" bgColor="red" >Submit</SUIRippleButton>
