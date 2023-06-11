@@ -1,41 +1,29 @@
-import { Menu, Button, Collapse } from 'antd';
+import { Menu, Collapse } from 'antd';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { useState } from 'react';
-import { Sling as Hamburger } from 'hamburger-react'
+
+import Logo from '../images/Logo.png'
 
 import './style.css';
+import { Link, useNavigate } from 'react-router-dom';
 
 const { Panel } = Collapse;
 
-export const SUIMobileNavbar = ({ className, menuItemColor, menuItemHoverColor, MobileBgColor }) => {
+export const SUIMobileNavbar = ({ className }) => {
 
     const [open, setOpen] = useState(false);
     const toggleCollapse = () => {
         setOpen(!open);
     };
-
-    const SUIStyles = `
-    .SUIMobileNavbar {
-        --MenuBarbgColor: ${MobileBgColor};
-    }
-    .SUIMobileNavbarDrawer {
-        --DrawerbgColor: ${MobileBgColor};
-        --menuItemColor: ${menuItemColor};
-        --menuItemHoverColor: ${menuItemHoverColor};
-        --menuItemActiveColor: ${menuItemHoverColor};
-    }
-    `;
+    const navigate = useNavigate();
 
     return (
         <div className={className}>
-            <style>
-                {SUIStyles}
-            </style>
             <div className='SUIMobileNavbar'>
                 <div className='SUIMobileNavbarContainer'>
                     <div className='SUIMobileNavbarContainerBox'>
                         <div className='SUIMobileNavbarLogo'>
-                            <img src="https://firebasestorage.googleapis.com/v0/b/skynoveau-office.appspot.com/o/logo.png?alt=media&token=e375539c-5dff-44c8-98b2-50b8adc60488" />
+                            <img src={Logo} alt={Logo} onClick={()=>{navigate("/")}} />
                         </div>
                         <div className='SUIMobileNavbarHamburgerButton'>
                             <AiOutlineMenu onClick={toggleCollapse} className='HamburgerIcon' />
@@ -60,34 +48,20 @@ export const SUIMobileNavbar = ({ className, menuItemColor, menuItemHoverColor, 
                                     className='SUIMobileNavbarDrawerContainerBox'
                                 >
                                     <Menu.Item key="Home" className="custom-item" onClick={() => { setOpen(!open) }}>
-                                        Home
+                                        <Link to="home">Home</Link>
                                     </Menu.Item>
-                                    <Menu.Item key="About" className="custom-item" onClick={() => { setOpen(!open) }}>
-                                        About
+                                    <Menu.Item key="Components" className="custom-item" onClick={() => { setOpen(!open) }}>
+                                        <Link to="components"> Components</Link>
                                     </Menu.Item>
-                                    <Menu.SubMenu key="Advantage" title="Advantage" className="custom-submenu">
-                                        <Menu.Item key="Option1" className="custom-item" onClick={() => { setOpen(!open) }}>Option1</Menu.Item>
-                                        <Menu.Item key="Option2" className="custom-item" onClick={() => { setOpen(!open) }}>Option2</Menu.Item>
-                                    </Menu.SubMenu>
-                                    <Menu.SubMenu key="Features" title="Features" className="custom-submenu">
-                                        <Menu.Item key="Option3" className="custom-item" onClick={() => { setOpen(!open) }}>Option3</Menu.Item>
-                                        <Menu.Item key="Option4" className="custom-item" onClick={() => { setOpen(!open) }}>Option4</Menu.Item>
-                                    </Menu.SubMenu>
-                                    <Menu.Item key="Service" className="custom-item" onClick={() => { setOpen(!open) }}>
-                                        Service
-                                    </Menu.Item>
-                                    <Menu.Item key="Payment" className="custom-item" onClick={() => { setOpen(!open) }}>
-                                        Payment
-                                    </Menu.Item>
-                                    <Menu.Item key="Cart" className="custom-item" onClick={() => { setOpen(!open) }}>
-                                        Cart
-                                    </Menu.Item>
-                                    <Menu.Divider className="custom-divider" />
+
                                     <Menu.Item key="Blog" className="custom-item" onClick={() => { setOpen(!open) }}>
-                                        Blog
+                                        <Link to="blog"> Blog</Link>
+                                    </Menu.Item>
+                                    <Menu.Item key="Git Hub" className="custom-item" onClick={() => { setOpen(!open) }}>
+                                        <Link to="github">Git Hub</Link>
                                     </Menu.Item>
                                     <Menu.Item key="Contact" className="custom-item" onClick={() => { setOpen(!open) }}>
-                                        Contact
+                                        <Link to="contact"> Contact</Link>
                                     </Menu.Item>
                                 </Menu>
                             </div>

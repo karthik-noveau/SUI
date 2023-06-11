@@ -1,20 +1,24 @@
 /* variables */
 .SUIMobileNavbar {
-    --MenuBarbgColor: whiteSmoke;
-    --logoWidth: 40px;
-    --hamburgerIconFontSize: 33px;
-    --hamburgerIconColor: #418995;
-    --padding: 7px 0;
+    --width:90%;
+    --height:50px;
+    --MenuBarbgColor: white;
+
+    --logoWidth:85px;
+
+    --hamburgerIconFontSize:30px;
+    --hamburgerIconColor: #00798d;
+    --padding: 0px 0;
 }
 
 .SUIMobileNavbarDrawer {
-    --DrawerbgColor: whiteSmoke;
+    --DrawerbgColor: var(--MenuBarbgColor);
 
-    --menuItemColor: #54a2af;
+    --menuItemColor: #00798d;
     --menuItemFontSize: 16px;
     --menuItemFontWeight: 500;
-    --menuItemHoverColor: #418995;
-    --menuItemActiveColor: #418995;
+    --menuItemHoverColor: #004f5c;
+    --menuItemActiveColor: #004f5c;
     --menuItemSelectedBgColor: #edededad;
 
     --subMenuTitleFontSize: 17px;
@@ -27,32 +31,46 @@
 }
 
 
+
 /* mobile navigation container bar */
 .SUIMobileNavbarContainer {
-    width: 100%;
+    width:100%;
+    height: var(--height);
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--MenuBarbgColor);
     padding: var(--padding);
     box-shadow: 0 0 3px 0px #dbdbdb;
 }
 
 .SUIMobileNavbarContainerBox {
-    width: 90%;
+    width: var(--width);
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 /* logo */
+.SUIMobileNavbarLogo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 .SUIMobileNavbarLogo img {
     width: var(--logoWidth);
 }
 
 /* hamburger menu button */
+.SUIMobileNavbarHamburgerButton{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
 .SUIMobileNavbarHamburgerButton .HamburgerIcon {
     font-size: var(--hamburgerIconFontSize);
     color: var(--hamburgerIconColor);
+
 }
 
 /* collapse */
@@ -72,6 +90,7 @@
     background-color: var(--DrawerbgColor);
     border-top: 1.5px solid #f1f1f1e0;
     box-shadow: none !important;
+    box-shadow: 0 5px 8px -7px #cfcfcf !important;
     padding: 7px 0 13px 0;
 }
 
@@ -125,14 +144,13 @@
 .SUIMobileNavbarDrawer .ant-menu-sub.ant-menu-inline {
     background-color: var(--subMenuDropdownBgColor) !important;
     border-radius: 0px !important;
-    margin-bottom: 12px !important;
+    margin-bottom: 0 !important;
     margin-left: 16px;
     margin-right: 0px;
-    padding: 7px 0 7px 8px !important;
+    padding: 0 0 0px 8px !important;
     border-left: 2px solid var(--subMenuDropdownBorderColor);
     border-radius: 0;
 }
-
 .SUIMobileNavbarDrawer .ant-menu-sub.ant-menu-inline li {
     padding-left: 18px !important;
 }

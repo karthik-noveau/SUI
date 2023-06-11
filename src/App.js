@@ -1,48 +1,25 @@
-import { SUILoadingButton } from './widgets/buttons/loadingbutton';
-import { SUIDownloadLoadingButton } from './widgets/buttons/downloadbutton';
-import { SUIRippleButton } from './widgets/buttons/ripplebutton';
-import { SUIButton } from './widgets/buttons/antbutton';
-import { SUINavbar } from './components/navbar';
+import { Route, Routes } from "react-router-dom";
+
+import Home from "./components/home";
+import StartUp from "./components/startup";
 
 import './app.css'
-import SUISpinner from './widgets/spinner';
-import SUIFooter from './components/footer';
-import SUISlider from './components/carousel/slider'
-import SUIDescriptionSlider from './components/carousel/description_slider';
-import SUITestimonials from './components/carousel/testimonials';
-
-
+import { SUINavbar } from "./components/navbar";
 
 function App() {
   return (
-    <div>
+    <>
 
-      <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" bgColor="white" />
+      <div className="newFeatureAlert">
+       <p> New Release! Check out the new SKYUI components and features!...</p>
+      </div>
 
-      <SUISlider />
-      <br></br>
-      <SUIDescriptionSlider />
-
-      <br></br>
-
-      <SUITestimonials />
-
-      <br></br>
-      <SUIRippleButton color="white" bgColor="red" >Submit</SUIRippleButton>
-      <br></br>
-      <SUILoadingButton time={1000} className="loginbtn" >Login</SUILoadingButton>
-      <br></br>
-      <SUILoadingButton time={1000} className="signinbtn"  >Sign in</SUILoadingButton>
-      <br></br>
-      <SUIDownloadLoadingButton time={1000} color="white" bgColor="red">download</SUIDownloadLoadingButton>
-      <br></br>
-      <SUIButton color="white" bgColor="red">Submit</SUIButton>
-
-      {/* <SUISpinner /> */}
-
-      <SUIFooter />
-
-    </div>
+      <SUINavbar />
+      <Routes>
+        <Route path="/" element={<StartUp />} />
+        <Route path="/components" element={<Home />} />
+      </Routes>
+    </>
   );
 }
 

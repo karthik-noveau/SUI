@@ -1,0 +1,142 @@
+.SUIDescriptionSlider {
+  --width:290px;
+  --height:550px;
+
+  --img-container-height:330px;
+  --text-container-height:200px;
+  
+  --slider-bullet-color: white;
+  --slider-bullet-active-color: rgb(207 1 157);
+  --slider-bullet-opacity:0;
+
+}
+
+.SUIDescriptionSlider {
+  height: var(--height);
+  width: var(--width) !important;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.SUIDescriptionSliderContaniner {
+  height: var(--img-container-height);
+  width: 100% !important;
+}
+
+.SUIDescriptionSliderContaninerBox {
+  width: 100%;
+  height: 100%;
+}
+
+.SUIDescriptionSliderContaninerBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* slider text container */
+
+.SUIDescriptionSliderTextContainerBox .heading {
+  font-weight: 500;
+  font-size: 21px;
+  text-align: center;
+  color: black;
+  margin-bottom: 12px;
+}
+
+.SUIDescriptionSliderTextContainer {
+  width: 100%-8px;
+  height: var(--text-container-height);
+  background-color: rgb(243 243 243);
+  padding: 11px 8px;
+}
+
+.SUIDescriptionSliderTextContainerBox {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.SUIDescriptionSliderTextContainerBoxItem {
+  overflow: hidden;
+  height: 75%;
+  width: 100%;
+}
+
+/* scroll bar */
+
+.SUIDescriptionSliderTextContainerBoxItem {
+  overflow-y: scroll;
+}
+
+.SUIDescriptionSliderTextContainerBoxItem::-webkit-scrollbar {
+  width: 7px;
+}
+
+.SUIDescriptionSliderTextContainerBoxItem::-webkit-scrollbar-thumb {
+  background-color: #d1d1d1;
+  border-radius: 25px;
+}
+
+.SUIDescriptionSliderTextContainerBoxItem p {
+  text-align: center;
+  padding: 5px;
+  color: #646464;
+}
+
+
+/* slider constant values */
+
+.SUIDescriptionSliderContaniner .swiper-button-next,
+.SUIDescriptionSliderContaniner .swiper-button-prev {
+  background-position: center;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  padding: 8px 1px;
+  border-radius: 100%;
+}
+
+.SUIDescriptionSliderContaniner .swiper-button-prev {
+  background-image: url('./icons/LeftArrowIcon.svg');
+}
+
+.SUIDescriptionSliderContaniner .swiper-button-next {
+  background-image: url('./icons/RightArrowIcon.svg');
+}
+
+.SUIDescriptionSliderContaniner .swiper-button-next::after,
+.SUIDescriptionSliderContaniner .swiper-button-prev::after {
+  content: "";
+}
+
+.SUIDescriptionSliderContaniner .swiper-pagination-bullet {
+  opacity: 0;
+}
+
+.SUIDescriptionSliderContaniner:hover .swiper-pagination-bullet {
+  width: 30px;
+  height: 4px;
+  border-radius: 0;
+  background-color: var(--slider-bullet-color);
+  opacity: var(--slider-bullet-opacity);
+  transition: opacity .5s;
+}
+
+.SUIDescriptionSliderContaniner:hover .swiper-pagination-bullet-active {
+  background-color: var(--slider-bullet-active-color) !important;
+}
+
+
+/* media quries */
+@media (max-width:768px){
+
+  .SUIDescriptionSliderContaniner .swiper-button-next,
+  .SUIDescriptionSliderContaniner .swiper-button-prev {
+    background-position: center;
+    background-size: 23px;
+    background-repeat: no-repeat;
+    padding: 0px 0px;
+    border-radius: 100%;
+  }
+
+}

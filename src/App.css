@@ -1,7 +1,27 @@
-/* .loginbtn .SUILoadingButton {
-  --bg-color: #ff7716;
+.newFeatureAlert{
+  width: 100%;
+  height: 50px;
+  background-color: #d3f1cb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.newFeatureAlert p {
+  text-align: center;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  color: #004f5c;
+  font-weight: 500;
+  width: 95%;
 }
 
-.signinbtn .SUILoadingButton {
-  --bg-color: #02600d;
-} */
+/* ----------------- media quries ------------------ */
+/* ------------------------------------------------- */
+@media(max-width:768px){
+  .newFeatureAlert p {
+    font-size: 13px;
+}
+}
+ 

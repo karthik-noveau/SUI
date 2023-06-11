@@ -2,32 +2,34 @@
 .SUIDeskNavbar {
     --navbarWidth: 95%;
     --navbarHeight: 71px;
-    --navbarBgColor: white;
+    --navbarBgColor:white;
 
-    --logoWidth: 50px;
+    --logoWidth: 130px;
     --logoFontSize: 32px;
     --logoFontWeight: 500;
     --logoColor: #397fe0;
 
     --menuItemFontSize: 21px;
     --menuItemFontWeight: 500;
-    --menuItemColor: #54a2af;
-    --menuItemHoverColor: #418995;
-    --menuItemBorderColor: #54a2af;
+    --menuItemColor: #00798d; 
+    --menuItemHoverColor: #004f5c;
+
+    --menuItemBorderColor: #004f5c;
+    --menuItemBorder-width:2px;
 }
 
 .SUIDeskNavbarSubMenuLink {
     --subMenuItemFontSize: 18px;
     --subMenuItemFontWeight: 500;
-    --subMenuItemColor: #54a2af;
-    --subMenuItemHoverColor: #418995;
+    --subMenuItemColor: #00798d;
+    --subMenuItemHoverColor: #004f5c;
 
     --subMenuDropdownBgColor: white;
     --SubMenuDropdownItemActiveBgColor: #edededad;
 }
 
 .SUIDeskNavbarLastMenuItem {
-    --lastMenuItemBgColor: #418995;
+    --lastMenuItemBgColor: #004f5c;
     --lastMenuItemColor: white;
     --lastMenuItemHoverColor: whiteSmoke;
 }
@@ -47,19 +49,20 @@
     display: flex;
     justify-content: center;
     height: var(--navbarHeight);
-    background-color: #ffffff;
+    background-color: var(--navbarBgColor);
     box-shadow: 0px 0px 7px 1px #e9e9e9;
 }
 
 .SUIDeskNavbarContainerBox.ant-menu-horizontal {
     line-height: 0px !important;
-    height: 34px;
-    margin-top: 34px !important;
+    height: 36px;
+    margin-top: 32px !important;
 }
 
 /* logo */
 .SUIDeskNavbar .SUIDeskLogo img {
     width: var(--logoWidth);
+    cursor: pointer;
 }
 
 .SUIDeskNavbar .SUIDeskLogo {
@@ -105,19 +108,19 @@
 }
 
 .SUIDeskNavbar .ant-menu-item-selected::after {
-    border-bottom: 4px solid var(--menuItemBorderColor) !important;
+    border-bottom: var(--menuItemBorder-width) solid var(--menuItemBorderColor) !important;
     border-radius: 25px;
 }
 
 
 .SUIDeskNavbar .ant-menu-item:hover::after {
-    border-bottom: 4px solid var(--menuItemBorderColor) !important;
+    border-bottom: var(--menuItemBorder-width) solid var(--menuItemBorderColor) !important;
     border-radius: 25px;
 }
 
 .SUIDeskNavbar .ant-menu-item-selected,
 .SUIDeskNavbar .ant-menu-item:hover {
-    color: #418995 !important;
+    color: var(--menuItemHoverColor) !important;
 }
 
 /* sub-menu links */
@@ -135,17 +138,17 @@
 }
 
 .SUIDeskNavbar .ant-menu-submenu:hover::after {
-    border-bottom: 4px solid var(--menuItemBorderColor) !important;
+    border-bottom: var(--menuItemBorder-width) solid var(--menuItemBorderColor) !important;
     border-radius: 25px;
 }
 
 .SUIDeskNavbar .ant-menu-submenu-open::after {
-    border-bottom: 4px solid var(--menuItemBorderColor) !important;
+    border-bottom: var(--menuItemBorder-width) solid var(--menuItemBorderColor) !important;
     border-radius: 25px;
 }
 
 .SUIDeskNavbar .ant-menu-submenu-selected::after {
-    border-bottom: 4px solid var(--menuItemBorderColor) !important;
+    border-bottom: var(--menuItemBorder-width) solid var(--menuItemBorderColor) !important;
     border-radius: 25px;
 }
 
