@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/home";
 import StartUp from "./components/startup";
 
-import './app.css'
+import './App.css'
 import { SUINavbar } from "./components/navbar";
 
 function App() {

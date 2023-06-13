@@ -6,6 +6,8 @@
   --testimonial-width:100%;
   --testimonial-height: 174px;
   --testimonial-content-font-color:rgb(107, 107, 107);
+
+  --arrow-icon-size:25px;
   
   --slider-bullet-color: white;
   --slider-bullet-active-color: rgb(207 1 157);
@@ -94,7 +96,7 @@
 }
 .SUITestimonial .swiper-custom-button-next, .SUITestimonial .swiper-custom-button-prev {
   background-position: center;
-  background-size: 38px;
+  background-size:var(--arrow-icon-size);
   background-repeat: no-repeat;
   padding: 25px 27px;
   border-radius: 100%;
@@ -159,6 +161,13 @@
 /*------------------media quries---------------- */
 /* --------------------------------------------- */
 @media (max-width:1000px) {
+  .SUITestimonialContainerBox {
+    padding: 15px 35px;
+  }
+  .SUITestimonial {
+    width: 100%;
+    background-color: #eeeeee;
+}
   .SUITestimonialContainer {
     width: 85%;
     height: 100%;
@@ -192,7 +201,7 @@
 
   .SUITestimonial .swiper-custom-button-next, .SUITestimonial .swiper-custom-button-prev {
     background-position: center;
-    background-size: 25px;
+    background-size: var(--arrow-icon-size);
     background-repeat: no-repeat;
     padding: 13px;
     border-radius: 100%;
