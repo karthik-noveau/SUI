@@ -1,0 +1,30 @@
+.startUpButton .SUIRippleButton{
+    --bg-color:#1b73ee;
+    --font-color:white;
+    --border-radius:4px;
+    --height:38px;
+    --width:100%;
+  }
+  .startUpText {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.startUpTextContainer{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.startUpTextContainer p{
+    margin-bottom: 30px;
+}
+.startUpTextContainer p:first-child{
+    font-size: 47px;
+    font-weight: bold;
+}
+.startUpTextContainer p:nth-of-type(2){
+    font-size: 17px;
+}
