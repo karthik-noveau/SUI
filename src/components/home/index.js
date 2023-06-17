@@ -8,34 +8,46 @@ import { SUIFooter } from '../../SUI_Library_Components/components/footer';
 import { SUISlider } from '../../SUI_Library_Components/components/carousel/slider'
 import { SUIDescriptionSlider } from '../../SUI_Library_Components/components/carousel/description_slider';
 import { SUITestimonials } from '../../SUI_Library_Components/components/carousel/testimonials';
+import LeftHomeMenu from './left_menu';
+import RightHomeMenu from './right_menu';
+
+import './style.css'
 
 const Home = () => {
     return (
         <>
-            <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" bgColor="white" />
+            <div className='Home'>
 
-            <SUISlider />
-            <br></br>
-            <SUIDescriptionSlider />
+                <LeftHomeMenu />
+                <div className='HomeContainer'>
 
-            <br></br>
+                    <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" bgColor="white" />
 
-            <SUITestimonials />
+                    <SUISlider />
+                    <br></br>
+                    <SUIDescriptionSlider />
 
-            <br></br>
-            <SUIRippleButton color="white" bgColor="red" >Submit</SUIRippleButton>
-            <br></br>
-            <SUILoadingButton time={1000} className="loginbtn" >Login</SUILoadingButton>
-            <br></br>
-            <SUILoadingButton time={1000} className="signinbtn"  >Sign in</SUILoadingButton>
-            <br></br>
-            <SUIDownloadLoadingButton time={1000} color="white" bgColor="red">download</SUIDownloadLoadingButton>
-            <br></br>
-            <SUIButton color="white" bgColor="red">Submit</SUIButton>
+                    <br></br>
 
-            {/* <SUISpinner /> */}
+                    <SUITestimonials />
 
-            <SUIFooter />
+                    <br></br>
+                    <SUIRippleButton color="white" bgColor="red" >Submit</SUIRippleButton>
+                    <br></br>
+                    <SUILoadingButton time={1000} className="loginbtn" >Login</SUILoadingButton>
+                    <br></br>
+                    <SUILoadingButton time={1000} className="signinbtn"  >Sign in</SUILoadingButton>
+                    <br></br>
+                    <SUIDownloadLoadingButton time={1000} color="white" bgColor="red">download</SUIDownloadLoadingButton>
+                    <br></br>
+                    <SUIButton color="white" bgColor="red">Submit</SUIButton>
+
+                    <SUIFooter />
+                </div>
+                <RightHomeMenu />
+
+            </div>
+
 
         </>
     )

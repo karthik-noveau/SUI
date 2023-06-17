@@ -1,8 +1,14 @@
 /* variables */
 .SUIButton {
   --bg-color: #1677ff;
+  --bg-color-hover:transparent;
+
   --font-color: white;
+  --font-color-hover:black;
+
   --border-radius: 4px;
+
+  --font-size:16px;
   --height: 32px;
   --width: 115px;
 }
@@ -16,9 +22,12 @@
   background-color: var(--bg-color);
   box-shadow: none;
   border-radius: var(--border-radius) !important;
+  color: var(--font-color) !important;
+  font-size: var(--font-size) !important;
 }
 .SUIButton.ant-btn-primary:hover {
-  background-color: var(--bg-color) !important;
+  background-color: var(--bg-color-hover) !important;
+  color: var(--font-color-hover) !important; 
 }
 .SUIButton.ant-btn-primary:active {
   background-color: var(--bg-color) !important;

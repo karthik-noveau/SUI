@@ -9,12 +9,10 @@ import { SUINavbar } from "./components/navbar";
 function App() {
   return (
     <>
-
-      <div className="newFeatureAlert">
-       <p> New Release! Check out the new SKYUI components and features!...</p>
-      </div>
-
       <SUINavbar />
+      <div className="newFeatureAlert">
+        <p> New Release! Check out the new SKYUI components and features!...</p>
+      </div>
       <Routes>
         <Route path="/" element={<StartUp />} />
         <Route path="/components" element={<Home />} />

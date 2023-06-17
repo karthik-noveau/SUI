@@ -1,0 +1,27 @@
+.LeftHomeMenuButton .SUIButton{
+    --bg-color:white;
+    --bg-color-hover:#e6f4ff;
+
+    --font-color: rgb(65, 65, 65);
+    --font-color-hover:#1f92af;
+
+    --border-radius: 4px;
+    --font-size:16px;
+
+    --height: 42px;
+    --width: 100%;
+}
+
+.LeftHomeMenu{
+    width: 20%;
+    min-width: 180px;
+    height: 100vh;
+    border-right: 1px solid rgb(206, 206, 206);   
+    padding: 0 8px;
+}
+.LeftHomeMenuButton{
+    margin-bottom: 10px;
+}
+.LeftHomeMenuButton .SUIButton{
+text-align: start;
+}

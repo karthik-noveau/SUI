@@ -90,7 +90,6 @@
     background-color: var(--DrawerbgColor);
     border-top: 1.5px solid #f1f1f1e0;
     box-shadow: none !important;
-    box-shadow: 0 5px 8px -7px #cfcfcf !important;
     padding: 7px 0 13px 0;
 }
 
