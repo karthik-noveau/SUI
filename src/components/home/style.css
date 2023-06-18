@@ -1,9 +1,30 @@
-.Home{
+.Home {
     margin-top: 30px;
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
-.HomeContainer{
+
+.HomeContainer {
+    margin: 10px 40px 0 40px;
     width: 50%;
+}
+
+/* ----------------- media quries ------------------ */
+/* ------------------------------------------------- */
+@media (max-width:1024px) {
+
+    .HomeContainer {
+        margin: 10px 20px 0 20px;
+        width: 74%;
+    }
+}
+@media (max-width:768px) {
+    .Home {
+        justify-content:center;
+    }
+    .HomeContainer {
+        margin: 10px 20px 0 20px;
+        width:90%;
+    }
 }

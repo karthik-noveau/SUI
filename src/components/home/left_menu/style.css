@@ -1,27 +1,38 @@
-.LeftHomeMenuButton .SUIButton{
-    --bg-color:white;
-    --bg-color-hover:#e6f4ff;
+.LeftHomeMenuButton .SUIButton {
+    --bg-color: white;
+    --bg-color-hover: #e6f4ff;
 
     --font-color: rgb(65, 65, 65);
-    --font-color-hover:#1f92af;
+    --font-color-hover: #1f92af;
 
     --border-radius: 4px;
-    --font-size:16px;
+    --font-size: 16px;
 
     --height: 42px;
     --width: 100%;
 }
 
-.LeftHomeMenu{
+.LeftHomeMenu {
     width: 20%;
-    min-width: 180px;
+    min-width: 150px;
+    max-width: 300px;
     height: 100vh;
-    border-right: 1px solid rgb(206, 206, 206);   
+    border-right: 1px solid rgb(206, 206, 206);
     padding: 0 8px;
 }
-.LeftHomeMenuButton{
+
+.LeftHomeMenuButton {
     margin-bottom: 10px;
 }
-.LeftHomeMenuButton .SUIButton{
-text-align: start;
+
+.LeftHomeMenuButton .SUIButton {
+    text-align: start;
+}
+
+/* -------------- media quries ------------- */
+/* ----------------------------------------- */
+@media (max-width:768px) {
+    .LeftHomeMenu {
+        display: none;
+    }
 }

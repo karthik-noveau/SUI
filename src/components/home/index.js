@@ -12,6 +12,7 @@ import LeftHomeMenu from './left_menu';
 import RightHomeMenu from './right_menu';
 
 import './style.css'
+import SUIComponentPageData from './sui_components_data';
 
 const Home = () => {
     return (
@@ -19,9 +20,11 @@ const Home = () => {
             <div className='Home'>
 
                 <LeftHomeMenu />
+
                 <div className='HomeContainer'>
 
-                    <SUINavbar menuItemColor="#54a2af" menuItemHoverColor="#418995" bgColor="white" />
+                    <SUIComponentPageData />
+
 
                     <SUISlider />
                     <br></br>
@@ -42,8 +45,9 @@ const Home = () => {
                     <br></br>
                     <SUIButton color="white" bgColor="red">Submit</SUIButton>
 
-                    <SUIFooter />
+                    {/* <SUIFooter /> */}
                 </div>
+
                 <RightHomeMenu />
 
             </div>
@@ -52,5 +56,7 @@ const Home = () => {
         </>
     )
 }
+
+
 
 export default Home
