@@ -5,6 +5,7 @@ import StartUp from "./components/startup";
 
 import './App.css'
 import { SUINavbar } from "./components/navbar";
+import { SUIDeskNavbar } from "./components/navbar/Desktop";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <Routes>
         <Route path="/" element={<StartUp />} />
         <Route path="/components" element={<Home />} />
+
+        <Route path="/components/component/navbar" element={<SUIDeskNavbar />} />
       </Routes>
     </>
   );

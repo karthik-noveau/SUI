@@ -1,0 +1,64 @@
+.container .container-homeContainer {
+  width: 100%;
+}
+.container-title {
+  margin: 50px 0;
+}
+.container-titleName {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--SUI-color-blue-100);
+    margin: 0;
+}
+.container-titleDescription{
+    font-size: 19px;
+    color: var(--SUI-color-grey-200);
+}
+.container-adTextContent {
+    font-size: 18px;
+    color: var(--SUI-color-grey-200);
+    margin-top: 8px;
+    margin-bottom: 14px;
+}
+.container-adSection {
+  display: flex;
+  border: 1px solid var(--SUI-color-grey-100);
+  border-radius: 10px;
+  padding: 14px;
+}
+.container-adSection img {
+    width: 140px;
+    margin-right: 16px;
+    object-fit: cover;
+}
+.container-adTextContent {
+  font-size: 18px;
+  color: var(--SUI-color-grey-200);
+  margin-top: 8px;
+  margin-bottom: 16px;
+}
+.container-adTextContent span {
+  font-weight: 600;
+  color: var(--SUI-color-black-100);
+  font-size: 19px;
+}
+.container-adBy {
+  font-weight: 300;
+  color: var(--SUI-color-grey-300);
+  font-size: 14px;
+}
+.container-componentkDescriptionSection {
+  margin-top: 25px;
+}
+.container-componentkDescriptionSection p {
+  font-size: 18px;
+  color: var(--SUI-color-grey-200);
+}
+.container-componentkDescriptionSection ul {
+  margin-top: 18px;
+}
+.container-componentkDescriptionSection ul li {
+  margin-bottom: 14px;
+  font-size: 18px;
+  color: var(--SUI-color-grey-200);
+}

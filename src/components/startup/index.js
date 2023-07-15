@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { SUIRippleButton } from '../../SUI_Library_Components/widgets/buttons/ripplebutton'
+import { SUIRippleButton } from '../../SUI_Library/widgets/buttons/ripplebutton'
 
 import HomeBanner from './images/HomeBanner.png'
 import MobileHomeBanner from './images/MobileHomeBanner.png'

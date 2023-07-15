@@ -1,62 +1,83 @@
-import { SUILoadingButton } from '../../SUI_Library_Components/widgets/buttons/loadingbutton';
-import { SUIDownloadLoadingButton } from '../../SUI_Library_Components/widgets/buttons/downloadbutton';
-import { SUIRippleButton } from '../../SUI_Library_Components/widgets/buttons/ripplebutton';
-import { SUIButton } from '../../SUI_Library_Components/widgets/buttons/antbutton';
-import { SUINavbar } from '../../SUI_Library_Components/components/navbar';
-import { SUISpinner } from '../../SUI_Library_Components/widgets/spinner';
-import { SUIFooter } from '../../SUI_Library_Components/components/footer';
-import { SUISlider } from '../../SUI_Library_Components/components/carousel/slider'
-import { SUIDescriptionSlider } from '../../SUI_Library_Components/components/carousel/description_slider';
-import { SUITestimonials } from '../../SUI_Library_Components/components/carousel/testimonials';
-import LeftHomeMenu from './left_menu';
-import RightHomeMenu from './right_menu';
+import ReactIframe from "react-iframe";
 
-import './style.css'
-import SUIComponentPageData from './sui_components_data';
+import { SUILoadingButton } from "../../SUI_Library/widgets/buttons/loadingbutton";
+import { SUIDownloadLoadingButton } from "../../SUI_Library/widgets/buttons/downloadbutton";
+import { SUIRippleButton } from "../../SUI_Library/widgets/buttons/ripplebutton";
+import { SUIButton } from "../../SUI_Library/widgets/buttons/antbutton";
+import { SUINavbar } from "../../SUI_Library/components/navbar";
+import { SUISpinner } from "../../SUI_Library/widgets/spinner";
+import { SUIFooter } from "../../SUI_Library/components/footer";
+import { SUISlider } from "../../SUI_Library/components/carousel/slider";
+import { SUIDescriptionSlider } from "../../SUI_Library/components/carousel/description_slider";
+import { SUITestimonials } from "../../SUI_Library/components/carousel/testimonials";
+import LeftHomeMenu from "./left_menu";
+import RightHomeMenu from "./right_menu";
+
+import "./style.css";
+import { Container } from "./container";
+
+const { REACT_APP_URL } = process.env;
 
 const Home = () => {
-    return (
-        <>
-            <div className='Home'>
+  console.log(REACT_APP_URL);
+  return (
+    <>
+      <div>ha </div>
+      <div className="Home">
+        <div className="HomeLeftHomeMenu">
+          <LeftHomeMenu />
+        </div>
 
-                <LeftHomeMenu />
+        <div className="HomeContainer">
+          <div className="HomeContainerBox">
 
-                <div className='HomeContainer'>
-
-                    <SUIComponentPageData />
-
-
-                    <SUISlider />
-                    <br></br>
-                    <SUIDescriptionSlider />
-
-                    <br></br>
-
-                    <SUITestimonials />
-
-                    <br></br>
-                    <SUIRippleButton color="white" bgColor="red" >Submit</SUIRippleButton>
-                    <br></br>
-                    <SUILoadingButton time={1000} className="loginbtn" >Login</SUILoadingButton>
-                    <br></br>
-                    <SUILoadingButton time={1000} className="signinbtn"  >Sign in</SUILoadingButton>
-                    <br></br>
-                    <SUIDownloadLoadingButton time={1000} color="white" bgColor="red">download</SUIDownloadLoadingButton>
-                    <br></br>
-                    <SUIButton color="white" bgColor="red">Submit</SUIButton>
-
-                    {/* <SUIFooter /> */}
-                </div>
-
-                <RightHomeMenu />
-
-            </div>
-
-
-        </>
-    )
-}
+ <Container/>
 
 
 
-export default Home
+            {/* <SUINavbar />
+            <br></br>
+            <SUISlider />
+            <br></br>
+            <SUIDescriptionSlider />
+
+            <br></br>
+
+            <SUITestimonials />
+
+            <ReactIframe />
+
+            <br></br>
+            <SUIRippleButton color="white" bgColor="red">
+              Submit
+            </SUIRippleButton>
+            <br></br>
+            <SUILoadingButton time={1000} className="loginbtn">
+              Login
+            </SUILoadingButton>
+            <br></br>
+            <SUILoadingButton time={1000} className="signinbtn">
+              Sign in
+            </SUILoadingButton>
+            <br></br>
+            <SUIDownloadLoadingButton time={1000} color="white" bgColor="red">
+              download
+            </SUIDownloadLoadingButton>
+            <br></br>
+            <SUIButton color="white" bgColor="red">
+              Submit
+            </SUIButton> */}
+
+            {/* <SUIFooter /> */}
+          </div>
+        </div>
+
+        <div className="HomeRightHomeMenu">
+          <RightHomeMenu />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Home;

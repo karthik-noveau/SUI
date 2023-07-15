@@ -1,0 +1,23 @@
+.componentRender-titleSection {
+  margin-top: 40px;
+}
+.componentRender-titleSection .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--SUI-color-blue-100);
+  margin: 0;
+}
+.componentRender-titleSection .textDescription {
+  font-size: 18px;
+  color: var(--SUI-color-grey-200);
+  margin: 0;
+  margin-top: 15px;
+}
+.componentRender-iframeSection iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+}
+.componentRender-iframeSection {
+    margin-top: 40px;
+}

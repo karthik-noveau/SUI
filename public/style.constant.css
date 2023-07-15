@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  font-family: system-ui;
+}
+:root {
+  /* colors */
+
+  --SUI-color-black-100: black;
+
+  --SUI-color-blue-100: #212931;
+
+  --SUI-color-grey-100: #cdcdcd;
+  --SUI-color-grey-200: #3e3e3e;
+  --SUI-color-grey-300: #747474;
+}
