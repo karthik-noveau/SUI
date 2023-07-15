@@ -3,9 +3,14 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./components/home";
 import StartUp from "./components/startup";
 
-import './App.css'
+import "./App.css";
 import { SUINavbar } from "./components/navbar";
 import { SUIDeskNavbar } from "./components/navbar/Desktop";
+import { SUIButton } from "./SUI_Library/widgets/buttons/antbutton";
+
+const PrivateRoute = (path, component)=>{
+
+}
 
 function App() {
   return (
@@ -16,9 +21,9 @@ function App() {
       </div>
       <Routes>
         <Route path="/" element={<StartUp />} />
-        <Route path="/components" element={<Home />} />
+        <Route path="/sky-ui" element={<Home />} />
 
-        <Route path="/components/component/navbar" element={<SUIDeskNavbar />} />
+        <Route path="/sky-ui/wedgets/button" element={<SUIButton>Submit</SUIButton>} />
       </Routes>
     </>
   );

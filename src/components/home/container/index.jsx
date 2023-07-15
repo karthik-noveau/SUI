@@ -5,7 +5,7 @@ import { SUIDeskNavbar } from "../../../SUI_Library/components/navbar/Desktop";
 import "./style.css";
 
 import skynoveauLogo from "./images/skynoveauLogo.png";
-import { ComponentRenderer } from "./component_viewer";
+import { ComponentRenderer } from "./component_renderer";
 
 export const Container = () => {
   return (

@@ -50,8 +50,8 @@ export const SUIMobileNavbar = ({ className }) => {
                                     <Menu.Item key="Home" className="custom-item" onClick={() => { setOpen(!open) }}>
                                         <Link to="home">Home</Link>
                                     </Menu.Item>
-                                    <Menu.Item key="Components" className="custom-item" onClick={() => { setOpen(!open) }}>
-                                        <Link to="components"> Components</Link>
+                                    <Menu.Item key="sky-ui" className="custom-item" onClick={() => { setOpen(!open) }}>
+                                        <Link to="sky-ui"> Components</Link>
                                     </Menu.Item>
 
                                     <Menu.Item key="Blog" className="custom-item" onClick={() => { setOpen(!open) }}>

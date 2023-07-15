@@ -12,7 +12,7 @@ export const ComponentRenderer = () => {
       </div>
       <div className="componentRender-iframeSection">
         <iframe
-          src={`${URL}/components/component/navbar`}
+          src={`${URL}/sky-ui/wedgets/button`}
           title="component-render"
         ></iframe>
       </div>
