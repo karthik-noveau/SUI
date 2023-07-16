@@ -22,7 +22,6 @@ const Home = () => {
   console.log(REACT_APP_URL);
   return (
     <>
-      <div>ha </div>
       <div className="Home">
         <div className="HomeLeftHomeMenu">
           <LeftHomeMenu />
