@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import Home from "./components/home";
 import StartUp from "./components/startup";
@@ -11,7 +11,8 @@ import { SUIButton } from "./SUI/widgets/buttons/antbutton";
 import { useEffect, useState } from "react";
 let navbar = true;
 const PrivateRoute = ({ component }) => {
-  let path = window.location.pathname;
+  let location = useLocation()
+  let path = location.pathname;
   if (path.includes("/widgets/")) {
     navbar = false;
     return component;
