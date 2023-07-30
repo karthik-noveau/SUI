@@ -1,7 +1,7 @@
 import React from "react";
 
 import "./style.css";
-import { SUIButton } from "../../../SUI_Library/widgets/buttons/antbutton";
+import { SUIButton } from "../../../SUI/widgets/buttons/antbutton";
 import { LeftMenuListData } from "./constant";
 
 const LeftHomeMenu = () => {

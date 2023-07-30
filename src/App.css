@@ -1,5 +1,6 @@
-body{
+body {
   position: relative;
+  margin: 0px !important;
 }
 .newFeatureAlert {
   width: 100%;
@@ -17,12 +18,11 @@ body{
   color: white;
   width: 95%;
 }
-
+ 
 /* ----------------- media quries ------------------ */
 /* ------------------------------------------------- */
-@media(max-width:768px){
+@media (max-width: 768px) {
   .newFeatureAlert p {
     font-size: 13px;
+  }
 }
-}
- 

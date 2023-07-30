@@ -14,7 +14,7 @@
     --menuItemColor: #00798d; 
     --menuItemHoverColor: #004f5c;
 
-    --menuItemBorderColor: #004f5c;
+    --menuItemBorderColor: transparent;
     --menuItemBorder-width:2px;
 }
 

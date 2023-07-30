@@ -3,13 +3,13 @@ body {
   font-family: system-ui;
 }
 :root {
-  /* colors */
+  /* font colors */
+  --SUI-font-color-black-light: #3e3e3e;
+  --SUI-font-color-black-medium: black;
 
-  --SUI-color-black-100: black;
+  --SUI-font-color-blue-medium: #212931;
 
-  --SUI-color-blue-100: #212931;
-
-  --SUI-color-grey-100: #cdcdcd;
-  --SUI-color-grey-200: #3e3e3e;
-  --SUI-color-grey-300: #747474;
+  /* border colors */
+  --SUI-border-color-grey-light: #eaeaea;
+  --SUI-border-color-grey-medium:  #747474;
 }

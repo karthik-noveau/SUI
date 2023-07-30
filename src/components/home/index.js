@@ -1,15 +1,13 @@
-import ReactIframe from "react-iframe";
-
-import { SUILoadingButton } from "../../SUI_Library/widgets/buttons/loadingbutton";
-import { SUIDownloadLoadingButton } from "../../SUI_Library/widgets/buttons/downloadbutton";
-import { SUIRippleButton } from "../../SUI_Library/widgets/buttons/ripplebutton";
-import { SUIButton } from "../../SUI_Library/widgets/buttons/antbutton";
-import { SUINavbar } from "../../SUI_Library/components/navbar";
-import { SUISpinner } from "../../SUI_Library/widgets/spinner";
-import { SUIFooter } from "../../SUI_Library/components/footer";
-import { SUISlider } from "../../SUI_Library/components/carousel/slider";
-import { SUIDescriptionSlider } from "../../SUI_Library/components/carousel/description_slider";
-import { SUITestimonials } from "../../SUI_Library/components/carousel/testimonials";
+import { SUILoadingButton } from "../../SUI/widgets/buttons/loadingbutton";
+import { SUIDownloadLoadingButton } from "../../SUI/widgets/buttons/downloadbutton";
+import { SUIRippleButton } from "../../SUI/widgets/buttons/ripplebutton";
+import { SUIButton } from "../../SUI/widgets/buttons/antbutton";
+import { SUINavbar } from "../../SUI/components/navbar";
+import { SUISpinner } from "../../SUI/widgets/spinner";
+import { SUIFooter } from "../../SUI/components/footer";
+import { SUISlider } from "../../SUI/components/carousel/slider";
+import { SUIDescriptionSlider } from "../../SUI/components/carousel/description_slider";
+import { SUITestimonials } from "../../SUI/components/carousel/testimonials";
 import LeftHomeMenu from "./left_menu";
 import RightHomeMenu from "./right_menu";
 
@@ -29,10 +27,7 @@ const Home = () => {
 
         <div className="HomeContainer">
           <div className="HomeContainerBox">
-
- <Container/>
-
-
+            <Container />
 
             {/* <SUINavbar />
             <br></br>
@@ -75,6 +70,7 @@ const Home = () => {
           <RightHomeMenu />
         </div>
       </div>
+    
     </>
   );
 };

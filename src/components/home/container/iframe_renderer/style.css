@@ -1,0 +1,32 @@
+.componentRender-titleSection {
+  margin-top: 40px;
+}
+.componentRender-titleSection .title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--SUI-font-color-blue-medium);
+  margin: 0;
+}
+.componentRender-titleSection .textDescription {
+  font-size: 18px;
+  color: var( --SUI-font-color-black-light);
+  margin: 0;
+  margin-top: 15px;
+}
+.componentRender-iframeSection iframe {
+  width: 100%;
+  border: none;
+}
+.componentRender-iframeSection iframe body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.componentRender-iframeSection {
+  margin-top: 40px;
+  border: 1px solid var(--SUI-border-color-grey-light);
+  border-radius: 7px 7px 0 0;
+  /* background-color: #f2f2f2; */
+  padding: 15px;
+}

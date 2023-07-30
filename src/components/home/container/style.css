@@ -7,24 +7,26 @@
 .container-titleName {
   font-size: 40px;
   font-weight: 600;
-  color: var(--SUI-color-blue-100);
+  color: var(--SUI-font-color-blue-medium);
   margin: 0;
 }
 .container-titleDescription {
   font-size: 19px;
-  color: var(--SUI-color-grey-200);
+  color: var(--SUI-font-color-black-light);
 }
 .container-adTextContent {
   font-size: 18px;
-  color: var(--SUI-color-grey-200);
+  color: var(--SUI-font-color-black-light);
   margin-top: 8px;
   margin-bottom: 14px;
 }
 .container-adSection {
   display: flex;
-  border: 1px solid var(--SUI-color-grey-100);
+  border: 1px solid var(--SUI-border-color-grey-light);
   border-radius: 10px;
   padding: 14px;
+  font-weight: 300;
+  width: 70%;
 }
 .container-adSection img {
   width: 140px;
@@ -33,18 +35,18 @@
 }
 .container-adTextContent {
   font-size: 18px;
-  color: var(--SUI-color-grey-200);
+  color: var(--SUI-font-color-black-light);
   margin-top: 8px;
   margin-bottom: 16px;
 }
 .container-adTextContent span {
   font-weight: 600;
-  color: var(--SUI-color-black-100);
+  color: var(--SUI-font-color-black-medium);
   font-size: 19px;
 }
 .container-adBy {
   font-weight: 300;
-  color: var(--SUI-color-grey-300);
+  color: var(--SUI-border-color-grey-medium);
   font-size: 14px;
 }
 .container-componentkDescriptionSection {
@@ -52,7 +54,7 @@
 }
 .container-componentkDescriptionSection p {
   font-size: 18px;
-  color: var(--SUI-color-grey-200);
+  color: var(--SUI-font-color-black-light);
 }
 .container-componentkDescriptionSection ul {
   margin-top: 18px;
@@ -60,7 +62,26 @@
 .container-componentkDescriptionSection ul li {
   margin-bottom: 14px;
   font-size: 18px;
-  color: var(--SUI-color-grey-200);
+  color: var(--SUI-font-color-black-light);
+}
+.container-componentShareSection {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--SUI-font-color-black-light);
+  border: 1px solid var(--SUI-border-color-grey-light);
+  border-top: none;
+  padding-right: 14px;
+}
+.container-componentShareSection .openWindow,
+.container-componentShareSection .openGit {
+  display: flex;
+  align-items: center;
+}
+.container-componentShareSection .openWindow {
+  margin-right: 20px;
+}
+.container-componentShareSection .icon {
+  margin-right: 5px;
 }
 
 @media (max-width: 768px) {
@@ -73,14 +94,24 @@
   .container-adTextContent {
     font-size: 15px;
     margin-bottom: 13px;
-}
-.container-adTextContent span {
-  font-size: 15px;
-}
-.container-adSection {
-  padding: 8px;
-}
-.container-adBy {
-  margin: 0;
-}
+  }
+  .container-adTextContent span {
+    font-size: 15px;
+  }
+  .container-adSection {
+    padding: 8px;
+    width: 95%;
+  }
+  .container-adBy {
+    margin: 0;
+  }
+  .container-componentShareSection span {
+    display: none;
+  }
+  .container-componentShareSection .openWindow {
+    margin-right: 0px;
+  }
+  .container-componentShareSection p{
+    margin: 10px 0;
+  }
 }

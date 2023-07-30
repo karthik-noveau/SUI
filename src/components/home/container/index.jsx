@@ -1,13 +1,21 @@
 import React from "react";
+import { MdOpenInNew } from "react-icons/md";
+import { AiFillGithub } from "react-icons/ai";
 
-import { SUIDeskNavbar } from "../../../SUI_Library/components/navbar/Desktop";
+import { SUIDeskNavbar } from "../../../SUI/components/navbar/Desktop";
+import { URL } from "../../../config";
 
 import "./style.css";
 
 import skynoveauLogo from "./images/skynoveauLogo.png";
-import { ComponentRenderer } from "./component_renderer";
+import { ComponentRenderer } from "./iframe_renderer";
+import { CodeEditor } from "./code_editor";
+import { useNavigate } from "react-router-dom";
 
 export const Container = () => {
+
+  const navigate = useNavigate()
+
   return (
     <div className="container">
       <div className="container-homeContainer">
@@ -20,11 +28,11 @@ export const Container = () => {
         </div>
 
         <div className="container-adSection">
-          <img src={skynoveauLogo} alt="skynoveauLogo" />
+          <img src="https://cdn4.buysellads.net/uu/1/127419/1670532177-Stock.jpg" alt="skynoveauLogo" />
           <div className="container-adTextSection">
             <p className="container-adTextContent">
-              Build your premium Website at an Affordable Cost -
-              <span> Skynoveau Technology The making wonders</span>
+              Build your premium Website at an Affordable Cost - Skynoveau Technology The making wonders
+              <span> </span>
             </p>
             <p className="container-adBy">ad by SKYUI</p>
           </div>
@@ -41,9 +49,20 @@ export const Container = () => {
           </ul>
         </div>
       </div>
-
-      <ComponentRenderer/>
-      <h1>ha</h1>
+      <div className="container-componentRenderSection">
+        <ComponentRenderer />
+        <div className="container-componentShareSection">
+          <p className="openWindow" onClick={()=>navigate(`/sky-ui/widgets/button`)}>
+            <MdOpenInNew className="icon" />
+            <span>open in new window</span>
+          </p>
+          <p className="openGit">
+            <AiFillGithub className="icon" />
+            <span>Git hub</span>
+          </p>
+        </div>
+        <CodeEditor />
+      </div>
 
       {/* <SUIDeskNavbar /> */}
     </div>

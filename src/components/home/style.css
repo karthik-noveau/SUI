@@ -9,6 +9,9 @@
 .HomeLeftHomeMenu {
   grid-area: leftMenu;
 }
+.HomeRightHomeMenu {
+  grid-area: rightmenu;
+}
 .HomeContainer {
   grid-area: homeMenu;
   position: absolute;
@@ -19,24 +22,32 @@
 .HomeContainerBox {
   width: 90%;
 }
-.HomeRightHomeMenu {
-  grid-area: rightmenu;
-}
 
 /* ----------------- media quries ------------------ */
 /* ------------------------------------------------- */
+@media (max-width: 1024px) {
+  .HomeRightHomeMenu {
+    display: none;
+  }
+  .Home {
+    grid-template-columns: minmax(180px, 180px) 1fr ;
+    grid-template-rows: 1fr;
+    grid-template-areas: "leftMenu homeMenu rightmenu";
+  }
+}
 @media (max-width: 768px) {
   .Home {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: "homeMenu";
     margin-top: 0px;
-}
-  .HomeContainer {
-    margin: 10px 20px 0 20px;
-    width: 90%;
+    margin-bottom: 150px;
   }
+  .HomeContainer {
+    margin: 10px 10px 0 10px;
+    width: 95%;
+}
   .HomeContainerBox {
     width: 100%;
-}
+  }
 }
