@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 
 import Home from "./components/home";
 import StartUp from "./components/startup";
@@ -24,6 +24,7 @@ const PrivateRoute = ({ path, component }) => {
 
 function App() {
   const [isNavbar, setIsNaavbar] = useState(true);
+  let location = useLocation()
   useEffect(() => setIsNaavbar(navbar), [navbar]);
   console.log("inside ");
   return (
