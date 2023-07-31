@@ -1,2 +1,4 @@
-export const URL = "https://sui.skynoveau.in";
-// export const URL = "http://localhost:3000";
+export const URL =
+  process.env.NODE_ENV === "development"
+    ? "http://localhost:3000"
+    : "https://sui.skynoveau.in";

@@ -9,23 +9,18 @@ import { SUINavbar as SUIDemoNavbar } from "./SUI/components/navbar";
 import { SUIDeskNavbar } from "./components/navbar/Desktop";
 import { SUIButton } from "./SUI/widgets/buttons/antbutton";
 import { useEffect, useState } from "react";
-let navbar = true;
-const PrivateRoute = ({ path, component }) => {
-  console.log("inside private ");
-  if (path.includes("/widgets/")) {
-    navbar = false;
-    return component;
-  }
-  if (path.includes("/components/")) {
-    navbar = false;
-    return component;
-  }
-};
 
 function App() {
   const [isNavbar, setIsNaavbar] = useState(true);
-  let location = useLocation()
-  useEffect(() => setIsNaavbar(navbar), [navbar]);
+  let location = useLocation();
+  let path = location.pathname;
+  useEffect(() => {
+    if (path) {
+      let showNavbar =
+        path.includes("widgets") || path.includes("components");
+      setIsNaavbar(!showNavbar);
+    }
+  }, [path]);
   console.log("inside ");
   return (
     <>
@@ -47,15 +42,7 @@ function App() {
         <Route path="/" element={<StartUp />} />
         <Route path="/sky-ui" element={<Home />} />
 
-        <Route
-          path="/sky-ui/widgets/button"
-          element={
-            <PrivateRoute
-              path="/sky-ui/widgets/button"
-              component={<SUIDemoNavbar />}
-            />
-          }
-        />
+        <Route path="/sky-ui/widgets/button" element={<SUIDemoNavbar />} />
       </Routes>
     </>
   );
