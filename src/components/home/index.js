@@ -1,13 +1,3 @@
-import { SUILoadingButton } from "../../SUI/widgets/buttons/loadingbutton";
-import { SUIDownloadLoadingButton } from "../../SUI/widgets/buttons/downloadbutton";
-import { SUIRippleButton } from "../../SUI/widgets/buttons/ripplebutton";
-import { SUIButton } from "../../SUI/widgets/buttons/antbutton";
-import { SUINavbar } from "../../SUI/components/navbar";
-import { SUISpinner } from "../../SUI/widgets/spinner";
-import { SUIFooter } from "../../SUI/components/footer";
-import { SUISlider } from "../../SUI/components/carousel/slider";
-import { SUIDescriptionSlider } from "../../SUI/components/carousel/description_slider";
-import { SUITestimonials } from "../../SUI/components/carousel/testimonials";
 import LeftHomeMenu from "./left_menu";
 import RightHomeMenu from "./right_menu";
 
@@ -28,41 +18,6 @@ const Home = () => {
         <div className="HomeContainer">
           <div className="HomeContainerBox">
             <Container />
-
-            {/* <SUINavbar />
-            <br></br>
-            <SUISlider />
-            <br></br>
-            <SUIDescriptionSlider />
-
-            <br></br>
-
-            <SUITestimonials />
-
-            <ReactIframe />
-
-            <br></br>
-            <SUIRippleButton color="white" bgColor="red">
-              Submit
-            </SUIRippleButton>
-            <br></br>
-            <SUILoadingButton time={1000} className="loginbtn">
-              Login
-            </SUILoadingButton>
-            <br></br>
-            <SUILoadingButton time={1000} className="signinbtn">
-              Sign in
-            </SUILoadingButton>
-            <br></br>
-            <SUIDownloadLoadingButton time={1000} color="white" bgColor="red">
-              download
-            </SUIDownloadLoadingButton>
-            <br></br>
-            <SUIButton color="white" bgColor="red">
-              Submit
-            </SUIButton> */}
-
-            {/* <SUIFooter /> */}
           </div>
         </div>
 
@@ -70,7 +25,6 @@ const Home = () => {
           <RightHomeMenu />
         </div>
       </div>
-    
     </>
   );
 };
