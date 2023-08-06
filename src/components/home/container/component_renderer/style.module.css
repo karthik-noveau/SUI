@@ -37,6 +37,7 @@
 .openGit {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 .openWindow {
   margin-right: 20px;
