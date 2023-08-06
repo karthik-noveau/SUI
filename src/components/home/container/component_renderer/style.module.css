@@ -14,7 +14,7 @@
   margin-top: 15px;
 }
 .componentFrameSection {
-  margin-top: 40px;
+  margin-top: 20px;
   border: 1px solid var(--SUI-border-color-grey-light);
   border-radius: 7px 7px 0 0;
   padding: 15px;
@@ -136,7 +136,20 @@
   .componentShareSection .icon {
     margin-right: 15px;
   }
-  .cssCodeEditor pre, .jsxCodeEditor pre{
+  .cssCodeEditor pre,
+  .jsxCodeEditor pre {
     font-size: 15px !important;
+  }
+  .jsxFileTab {
+    font-size: 15px;
+  }
+  .jsxFileTab .icon {
+    font-size: 16px;
+  }
+  .cssFileTab {
+    font-size: 15px;
+  }
+  .cssFileTab .icon {
+    font-size: 14px;
   }
 }
