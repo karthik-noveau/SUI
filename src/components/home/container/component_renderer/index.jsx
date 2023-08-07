@@ -9,6 +9,9 @@ import { CodeEditor } from "../code_editor/index.jsx";
 
 import styles from "./style.module.css";
 import { SUIButton } from "@sui/widgets/buttons/antbutton/index.jsx";
+import { SUIDownloadLoadingButton } from "../../../../SUI/widgets/buttons/downloadbutton/index.jsx";
+import { SUIRippleButton } from "../../../../SUI/widgets/buttons/ripplebutton/index.jsx";
+import { SUILoadingButton } from "../../../../SUI/widgets/buttons/loadingbutton/index.jsx";
 
 export const ComponentRenderer = () => {
   const navigate = useNavigate();
@@ -24,7 +27,9 @@ export const ComponentRenderer = () => {
 
       <div className={styles.componentFrameSection}>
         <SUIButton>submit</SUIButton>
-        <SUIButton>submit</SUIButton>
+        <SUIDownloadLoadingButton>Submit</SUIDownloadLoadingButton>
+        <SUIRippleButton>Submit</SUIRippleButton>
+        <SUILoadingButton>Submit</SUILoadingButton>
       </div>
 
       <div className={styles.componentRenderSection}>

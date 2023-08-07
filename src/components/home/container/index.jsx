@@ -1,16 +1,20 @@
 import React from "react";
-import {BiSolidWidget} from "react-icons/bi"
+import { BiSolidWidget } from "react-icons/bi";
 
 import skynoveauLogo from "./images/skynoveauLogo.png";
 import { ComponentRenderer } from "./component_renderer";
 
 import styles from "./style.module.css";
+import { AdContainer } from "./ad";
 
 export const Container = () => {
   return (
     <div className={styles.container}>
       <div className={styles.homeContainer}>
-      <div className={styles.categoryTitle}><BiSolidWidget/>widgets</div>
+        <div className={styles.categoryTitle}>
+          <BiSolidWidget />
+          widgets
+        </div>
         <div className={styles.title}>
           <p className={styles.titleName}>Button</p>
           <p className={styles.titleDescription}>
@@ -19,20 +23,7 @@ export const Container = () => {
           </p>
         </div>
 
-        <div className={styles.adSection}>
-          <img
-            src="https://cdn4.buysellads.net/uu/1/127419/1670532177-Stock.jpg"
-            alt="skynoveauLogo"
-          />
-          <div className={styles.adTextSection}>
-            <p className={styles.adTextContent}>
-              Build your premium Website at an Affordable Cost - Skynoveau
-              Technology The making wonders
-              <span> </span>
-            </p>
-            <p className={styles.adBy}>ad by SKYUI</p>
-          </div>
-        </div>
+        <AdContainer />
 
         <div className={styles.componentkDescriptionSection}>
           <p>
@@ -40,8 +31,10 @@ export const Container = () => {
             placed throughout your UI, in places like:
           </p>
           <ul>
-            <li>primary button</li>
-            <li>primary button</li>
+            <li>Normal button</li>
+            <li>loading button</li>
+            <li>loading button with icon </li>
+            
           </ul>
         </div>
         <ComponentRenderer />

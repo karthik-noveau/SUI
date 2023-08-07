@@ -24,41 +24,7 @@
   color: var(--SUI-font-color-black-light);
   line-height: 24px;
 }
-.adTextContent {
-  font-size: 18px;
-  color: var(--SUI-font-color-black-light);
-  margin-top: 8px;
-  margin-bottom: 14px;
-}
-.adSection {
-  display: flex;
-  border: 1px solid var(--SUI-border-color-grey-light);
-  border-radius: 10px;
-  padding: 14px;
-  font-weight: 400;
-  width: 90%;
-}
-.adSection img {
-  width: 140px;
-  margin-right: 16px;
-  object-fit: cover;
-}
-.adTextContent {
-  font-size: 18px;
-  color: var(--SUI-font-color-black-light);
-  margin-top: 8px;
-  margin-bottom: 16px;
-}
-.adTextContent span {
-  font-weight: 600;
-  color: var(--SUI-font-color-black-medium);
-  font-size: 19px;
-}
-.adBy {
-  font-weight: 300;
-  color: var(--SUI-border-color-grey-medium);
-  font-size: 14px;
-}
+
 .componentkDescriptionSection {
   margin-top: 25px;
   font-size: 18px;
@@ -82,25 +48,6 @@
   .componentkDescriptionSection {
     font-size: 17px;
   }
-  .adSection img {
-    aspect-ratio: 5/4;
-    height: 89px;
-    margin-right: 16px;
-    object-fit: cover;
-  }
-  .adTextContent {
-    font-size: 15px;
-    margin-bottom: 13px;
-  }
-  .adTextContent span {
-    font-size: 15px;
-  }
-  .adSection {
-    padding: 8px;
-    width: 95%;
-  }
-  .adBy {
-    margin: 0;
-  }
+  
 
 }

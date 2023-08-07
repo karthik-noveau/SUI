@@ -4,7 +4,7 @@ import { Button } from "antd";
 
 import "./style.css";
 
-export const SUILoadingButton = ({ children, time, className }) => {
+export const SUILoadingButton = ({ children, time="1000", className }) => {
   const [loadings, setLoadings] = useState([]);
 
   const enterLoading = (number) => {
