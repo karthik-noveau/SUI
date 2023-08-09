@@ -27,14 +27,13 @@ export const Container = () => {
 
         <div className={styles.componentkDescriptionSection}>
           <p>
-            Buttons communicate actions that users can take. They are typically
-            placed throughout your UI, in places like:
+            Buttons exhibit varying user interfaces and functionalities, as
+            outlined below :
           </p>
           <ul>
-            <li>Normal button</li>
-            <li>loading button</li>
+            <li>normal button</li>
+            <li>loading button with text</li>
             <li>loading button with icon </li>
-            
           </ul>
         </div>
         <ComponentRenderer />

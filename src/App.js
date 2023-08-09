@@ -40,6 +40,7 @@ function App() {
         <Route path="/" element={<StartUp />} />
         <Route path="/sky-ui" element={<Home />} />
 
+        <Route path="/sky-ui/components/normal-button" element={<SUIDemoNavbar />} />
         <Route path="/sky-ui/components/navbar" element={<SUIDemoNavbar />} />
       </Routes>
     </>

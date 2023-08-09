@@ -1,8 +1,8 @@
 import { Button } from "antd";
 
-import "./style.css";
+import "./sui.button.css";
 
-export const SUIButton = ({ children, className }) => {
+export const SUIButton = ({ children = "Submit", className }) => {
   return (
     <div className={className}>
       <Button type="primary" className="SUIButton">
