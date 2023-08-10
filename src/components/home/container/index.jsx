@@ -4,7 +4,7 @@ import { BiSolidWidget } from "react-icons/bi";
 import skynoveauLogo from "./images/skynoveauLogo.png";
 import { ComponentRenderer } from "./component_renderer";
 
-import styles from "./style.module.css";
+import styles from "./container.module.css";
 import { AdContainer } from "./ad";
 
 export const Container = () => {

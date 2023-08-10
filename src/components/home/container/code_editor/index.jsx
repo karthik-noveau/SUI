@@ -1,7 +1,7 @@
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { okaidia } from "react-syntax-highlighter/dist/esm/styles/prism";
 
-import styles from "./style.module.css";
+import styles from "./codeEditor.module.css";
 
 export const CodeEditor = ({ code, language }) => {
   return (

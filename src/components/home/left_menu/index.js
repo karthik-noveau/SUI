@@ -1,8 +1,9 @@
 import React from "react";
 
-import "./style.css";
 import { SUIButton } from "@sui/widgets/buttons/button";
 import { LeftMenuListData } from "./constant";
+
+import "./style.css";
 
 const LeftHomeMenu = () => {
   return (

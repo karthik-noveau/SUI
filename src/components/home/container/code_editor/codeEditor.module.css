@@ -1,0 +1,10 @@
+.container pre{
+  margin: 0px !important;
+  border-radius: 0 0 8px 8px !important;
+  line-height: 1.5 !important;
+  overflow: hidden;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}

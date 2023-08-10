@@ -8,7 +8,7 @@ import { RiReactjsLine } from "react-icons/ri";
 import { CodeEditor } from "../code_editor/index.jsx";
 import { NormalButton } from "../../../common/widgets/button/index.jsx";
 
-import styles from "./style.module.css";
+import styles from "./comRender.module.css";
 
 export const ComponentRenderer = () => {
   const navigate = useNavigate();
@@ -49,7 +49,9 @@ export const ComponentRenderer = () => {
             </div>
           </div>
           <CodeEditor
-            code={`<AiFillGithub className={styles.icon} />`}
+            code={`<SUIButton/>
+<SUIButton className="normalButton1">Button</SUIButton>
+<SUIButton className="normalButton2">Button</SUIButton>`}
             language="jsx"
           />
         </div>
@@ -58,16 +60,15 @@ export const ComponentRenderer = () => {
           <div className={styles.cssFileTitle}>
             <div className={styles.cssFileTab}>
               <SiCss3 className={styles.icon} />
-              style.module.css
+              style.css
             </div>
           </div>
           <CodeEditor
-            code={`.iframeSection {
-  margin-top: 40px;
-  border: 1px solid var(--SUI-border-color-grey-light);
-  border-radius: 7px 7px 0 0;
-  padding: 15px;
-  position: relative;
+            code={`.button1 .SUIButton{
+    --bg-color:#009b54;
+}
+.button2 .SUIButton{
+    --bg-color:#ea1010;
 }`}
             language="css"
           />
