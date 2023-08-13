@@ -1,6 +1,20 @@
-.button1 .SUIButton{
-    --bg-color:#009b54;
+.button1 {
+  /* default color applied */
+  --width: 100%;
 }
-.button2 .SUIButton{
-    --bg-color:#ea1010;
+.button2 {
+  --bg-color: #017001;
+  --width: 100%;
+}
+.button3 {
+  --bg-color: black;
+  --width: 100%;
+}
+
+@media (max-width: 768px) {
+  .button1,
+  .button2,
+  .button3 {
+    --font-size: 14px;
+  }
 }

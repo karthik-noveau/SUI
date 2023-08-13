@@ -1,16 +1,17 @@
+import { useEffect, useState } from "react";
 import { Route, Routes, useLocation } from "react-router-dom";
 
 import Home from "./components/home";
 import StartUp from "./components/startup";
-
 import { SUINavbar } from "./components/navbar";
-import { SUINavbar as SUIDemoNavbar } from "./SUI/components/navbar";
-import { useEffect, useState } from "react";
+import { Button } from "@project/common/widgets/button";
 
 import styles from "./app.module.css";
 
 function App() {
   const [isNavbar, setIsNaavbar] = useState(true);
+  const [showPadding, setShowPadding] = useState(true);
+
   let location = useLocation();
   let path = location.pathname;
   useEffect(() => {
@@ -18,11 +19,17 @@ function App() {
       let showNavbar = path.includes("widgets") || path.includes("components");
       setIsNaavbar(!showNavbar);
     }
+    if (
+      path.includes("navbar") ||
+      path.includes("/") ||
+      path.includes("overview")
+    ) {
+      setShowPadding(false);
+    }
   }, [path]);
-  console.log("inside ");
   return (
     <>
-      {isNavbar ? (
+      {isNavbar && (
         <>
           <SUINavbar />
           <div className={styles.newFeatureAlert}>
@@ -32,17 +39,16 @@ function App() {
             </p>
           </div>
         </>
-      ) : (
-        ""
       )}
 
-      <Routes>
-        <Route path="/" element={<StartUp />} />
-        <Route path="/sky-ui" element={<Home />} />
+      <div className={showPadding && styles.componentBody}>
+        <Routes>
+          <Route path="/" element={<StartUp />} />
+          <Route path="/sky-ui/overview" element={<Home />} />
 
-        <Route path="/sky-ui/components/normal-button" element={<SUIDemoNavbar />} />
-        <Route path="/sky-ui/components/navbar" element={<SUIDemoNavbar />} />
-      </Routes>
+          <Route path="/sky-ui/components/button" element={<Button />} />
+        </Routes>
+      </div>
     </>
   );
 }

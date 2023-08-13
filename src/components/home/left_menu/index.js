@@ -1,6 +1,6 @@
 import React from "react";
 
-import { SUIButton } from "@sui/widgets/buttons/button";
+import { SUIButton } from "@sui/widgets/button";
 import { LeftMenuListData } from "./constant";
 
 import "./style.css";
@@ -13,7 +13,9 @@ const LeftHomeMenu = () => {
           {LeftMenuListData.map((navItem) => {
             return (
               <>
-                <SUIButton className="LeftHomeMenuButton">{navItem.name}</SUIButton>
+                <SUIButton className="LeftHomeMenuButton">
+                  {navItem.name}
+                </SUIButton>
               </>
             );
           })}

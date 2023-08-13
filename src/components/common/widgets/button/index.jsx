@@ -1,14 +1,22 @@
-import { SUIButton } from "@sui/widgets/buttons/button";
+import { DownloadOutlined } from "@ant-design/icons";
+
+import { SUIButton } from "@sui/widgets/button";
 
 import "./button.css";
-import styles from "./button.module.css"
+import styles from "./button.module.css";
 
-export const NormalButton = () => {
+export const Button = () => {
   return (
     <div className={styles.container}>
-      <SUIButton>Button</SUIButton>
-      <SUIButton className="button1">Button</SUIButton>
-      <SUIButton className="button2">Button</SUIButton>
+      <SUIButton className="button1">Contact</SUIButton>
+
+      <SUIButton className="button2" loading={true}>
+        Submit
+      </SUIButton>
+
+      <SUIButton className="button3" icon={<DownloadOutlined />} loading={true}>
+        Download
+      </SUIButton>
     </div>
   );
 };

@@ -29,7 +29,7 @@ export const SUIDeskNavbar = ({ className }) => {
                             <Link to="/"> Home</Link>
                         </Menu.Item>
                         <Menu.Item key="sky-ui" >
-                            <Link to="/sky-ui"> Components</Link>
+                            <Link to="/sky-ui/overview"> Components</Link>
                         </Menu.Item>
                         <Menu.Item key="Blog">
                             <Link to="/blog">Blog</Link>

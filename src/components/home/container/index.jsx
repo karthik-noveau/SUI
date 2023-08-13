@@ -17,10 +17,10 @@ export const Container = () => {
         </div>
         <div className={styles.title}>
           <p className={styles.titleName}>Button</p>
-          <p className={styles.titleDescription}>
+          {/* <p className={styles.titleDescription}>
             Buttons allow users to take actions, and make choices, with a single
             tap.
-          </p>
+          </p> */}
         </div>
 
         <AdContainer />
@@ -31,9 +31,9 @@ export const Container = () => {
             outlined below :
           </p>
           <ul>
-            <li>normal button</li>
-            <li>loading button with text</li>
-            <li>loading button with icon </li>
+            <li>button - text only</li>
+            <li>button - text with loader</li>
+            <li>button - text with icon loader</li>
           </ul>
         </div>
         <ComponentRenderer />

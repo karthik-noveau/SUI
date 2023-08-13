@@ -1,0 +1,53 @@
+/* variables */
+.SUIButton {
+  --bg-color: var(--sui-color);
+  --bg-color-hover: transparent;
+
+  --font-color: white;
+  --font-color-hover: transparent;
+
+  --border-radius: 4px;
+  --icon-size: 15px;
+
+  --font-size: 16px;
+  --height: 35px;
+  --width: max-content;
+}
+
+/* styles */
+.SUIButton {
+  height: var(--height) !important;
+  width: var(--width) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.SUIButton.ant-btn-primary {
+  background-color: var(--bg-color);
+  box-shadow: none;
+  border-radius: var(--border-radius) !important;
+  color: var(--font-color) !important;
+  font-size: var(--font-size) !important;
+  transition: all 0.1s;
+}
+.SUIButton.ant-btn-primary .ant-btn-icon {
+  font-size: var(--icon-size) !important;
+}
+.SUIButton.ant-btn-primary:hover {
+  background-color: var(--bg-color) !important;
+  color: var(--font-color) !important;
+  box-shadow: inset 0 0 100px 0px #00000033;
+}
+.SUIButton.ant-btn-primary:active {
+  background-color: var(--bg-color) !important;
+  box-shadow: none !important;
+}
+.SUIButton.ant-btn-loading {
+  background-color: var(--bg-color) !important;
+  opacity: 0.95 !important;
+}
+
+/* outer glow */
+.SUIButton .ant-wave {
+  display: none !important;
+}

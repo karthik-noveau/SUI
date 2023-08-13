@@ -18,7 +18,9 @@ body {
   color: white;
   width: 95%;
 }
- 
+.componentBody{
+  padding: 8px;
+}
 /* ----------------- media quries ------------------ */
 /* ------------------------------------------------- */
 @media (max-width: 768px) {

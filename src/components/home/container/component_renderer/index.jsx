@@ -6,7 +6,7 @@ import { SiCss3 } from "react-icons/si";
 import { RiReactjsLine } from "react-icons/ri";
 
 import { CodeEditor } from "../code_editor/index.jsx";
-import { NormalButton } from "../../../common/widgets/button/index.jsx";
+import { Button } from "../../../common/widgets/button/index.jsx";
 
 import styles from "./comRender.module.css";
 
@@ -16,21 +16,21 @@ export const ComponentRenderer = () => {
   return (
     <div>
       <div className={styles.titleSection}>
-        <p className={styles.title}>Normal Button</p>
+        <p className={styles.title}>Examples</p>
         <p className={styles.textDescription}>
           button comes with variant colors{" "}
         </p>
       </div>
 
       <div className={styles.componentFrameSection}>
-        <NormalButton />
+        <Button />
       </div>
 
       <div className={styles.componentRenderSection}>
         <div className={styles.componentShareSection}>
           <p
             className={styles.openWindow}
-            onClick={() => navigate("/sky-ui/components/navbar")}
+            onClick={() => navigate("/sky-ui/components/button")}
           >
             <MdOpenInNew className={styles.icon} />
             <span>open in new window</span>
@@ -49,9 +49,15 @@ export const ComponentRenderer = () => {
             </div>
           </div>
           <CodeEditor
-            code={`<SUIButton/>
-<SUIButton className="normalButton1">Button</SUIButton>
-<SUIButton className="normalButton2">Button</SUIButton>`}
+            code={`<SUIButton className="button1">Contact</SUIButton>
+
+<SUIButton className="button2" loading={true}>
+  Submit
+</SUIButton>
+
+<SUIButton className="button3" icon={<DownloadOutlined />} loading={true}>
+  Download
+</SUIButton>`}
             language="jsx"
           />
         </div>
@@ -64,12 +70,19 @@ export const ComponentRenderer = () => {
             </div>
           </div>
           <CodeEditor
-            code={`.button1 .SUIButton{
-    --bg-color:#009b54;
+            code={`.button1 {
+  /* default color applied */
+  --width: 100%;
 }
-.button2 .SUIButton{
-    --bg-color:#ea1010;
-}`}
+.button2 {
+  --bg-color: #017001;
+  --width: 100%;
+}
+.button3 {
+  --bg-color: black;
+  --width: 100%;
+}
+`}
             language="css"
           />
         </div>
